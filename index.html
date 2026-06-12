@@ -20,15 +20,30 @@ nav a{color:#fff;text-decoration:none;margin-left:15px}
 .section{padding:70px 5%}
 .section-title{text-align:center;margin-bottom:30px;color:var(--green)}
 .stats{background:var(--green);color:#fff}
-.stats-grid,.cards,.testimonials{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+.stats-grid,.testimonials{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
 .counter{font-size:42px;font-weight:bold}
+.stat-item{text-align:center}
+.stat-item p{margin-top:10px;font-size:16px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
 .card,.testimonial{background:#fff;padding:20px;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,.1)}
 .card{border-top:5px solid var(--orange)}
-.gallery{max-width:900px;margin:auto}
-.gallery img{width:100%;height:450px;object-fit:cover;border-radius:15px}
+.achievement-card{display:flex;flex-direction:column;height:100%;background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,.1)}
+.achievement-image{width:100%;height:200px;object-fit:cover;background:#f0f0f0;display:flex;align-items:center;justify-content:center;color:#999;font-size:14px}
+.achievement-content{padding:15px;flex-grow:1;display:flex;align-items:center;justify-content:center;text-align:center;border-top:5px solid var(--orange)}
+.gallery{max-width:900px;margin:auto;position:relative}
+.gallery-slider{position:relative;width:100%;overflow:hidden;border-radius:15px}
+.gallery-container{display:flex;transition:transform 0.5s ease-in-out}
+.gallery img{width:100%;height:450px;object-fit:cover;border-radius:15px;flex-shrink:0}
+.gallery-controls{text-align:center;margin-top:15px}
+.gallery-dot{display:inline-block;width:12px;height:12px;margin:0 5px;background:#ccc;border-radius:50%;cursor:pointer;transition:background 0.3s}
+.gallery-dot.active{background:var(--green)}
 .cta{background:var(--light);text-align:center}
 footer{background:#004d2e;color:#fff;padding:30px;text-align:center}
-@media(max-width:768px){.hero-grid{grid-template-columns:1fr}.gallery img{height:260px}}
+@media(max-width:768px){
+  .hero-grid{grid-template-columns:1fr}
+  .gallery img{height:260px}
+  .achievement-image{height:150px}
+}
 </style>
 </head>
 <body>
@@ -62,10 +77,10 @@ footer{background:#004d2e;color:#fff;padding:30px;text-align:center}
 
 <section class="section stats">
 <div class="stats-grid">
-<div><div class="counter" data-target="5000">0</div><p>Students Applied</p></div>
-<div><div class="counter" data-target="3000">0</div><p>Students Supported</p></div>
-<div><div class="counter" data-target="8000">0</div><p>Portal Visitors</p></div>
-<div><div class="counter" data-target="250">0</div><p>ICT Computers</p></div>
+<div class="stat-item"><div class="counter" data-target="5000">0</div><p>Students Applied</p></div>
+<div class="stat-item"><div class="counter" data-target="3000">0</div><p>Students Supported</p></div>
+<div class="stat-item"><div class="counter" data-target="8000">0</div><p>Portal Visitors</p></div>
+<div class="stat-item"><div class="counter" data-target="250">0</div><p>ICT Computers</p></div>
 </div>
 </section>
 
@@ -79,53 +94,136 @@ Hon. Alfred Charles remains committed to educational advancement, youth empowerm
 <section id="achievements" class="section">
 <h2 class="section-title">Achievements of Hon. Alfred Charles</h2>
 <div class="cards">
-<div class="card">Promotion and preservation of Nsit Ubium cultural heritage.</div>
-<div class="card">Solar-powered street lights installation.</div>
-<div class="card">Security partnership with Nigerian Peace Corps personnel.</div>
-<div class="card">Employment of 12 casual staff.</div>
-<div class="card">1,666M perimeter fencing of council premises.</div>
-<div class="card">Keep Nsit Ubium Clean initiative.</div>
-<div class="card">Hospital bill support for over 200 youths.</div>
-<div class="card">Payment of school fees for numerous indigenes.</div>
-<div class="card">Renovation of conference hall.</div>
-<div class="card">Renovation of chairman's office and executive chamber.</div>
-<div class="card">Renovation of legislative chamber.</div>
-<div class="card">Purchase of JAMB forms for over 200 candidates.</div>
-<div class="card">250 computers at ICT Centre.</div>
-<div class="card">24-hour internet and solar systems.</div>
-<div class="card">Education Trust Fund for students.</div>
-<div class="card">Grading of over 30 rural roads.</div>
-<div class="card">Free medical outreach programmes.</div>
-<div class="card">Urua Ntakrok modern market project.</div>
-<div class="card">Skill acquisition training for 22 indigenes.</div>
-<div class="card">Educational materials to 38 schools.</div>
-<div class="card">2-hectare demonstration farm.</div>
-<div class="card">Educational grants to 53 students.</div>
-<div class="card">2026 free JAMB forms.</div>
-<div class="card">Landscaping and beautification of secretariat.</div>
+<div class="achievement-card">
+<img src="REPLACE_ACHIEVEMENT_IMAGE_1" alt="Achievement" class="achievement-image">
+<div class="achievement-content">Promotion and preservation of Nsit Ubium cultural heritage.</div>
+</div>
+<div class="achievement-card">
+<img src="REPLACE_ACHIEVEMENT_IMAGE_2" alt="Achievement" class="achievement-image">
+<div class="achievement-content">Solar-powered street lights installation.</div>
+</div>
+<div class="achievement-card">
+<img src="REPLACE_ACHIEVEMENT_IMAGE_3" alt="Achievement" class="achievement-image">
+<div class="achievement-content">Security partnership with Nigerian Peace Corps personnel.</div>
+</div>
+<div class="achievement-card">
+<img src="REPLACE_ACHIEVEMENT_IMAGE_1" alt="Achievement" class="achievement-image">
+<div class="achievement-content">Employment of 12 casual staff.</div>
+</div>
+<div class="achievement-card">
+<img src="REPLACE_ACHIEVEMENT_IMAGE_2" alt="Achievement" class="achievement-image">
+<div class="achievement-content">1,666M perimeter fencing of council premises.</div>
+</div>
+<div class="achievement-card">
+<img src="REPLACE_ACHIEVEMENT_IMAGE_3" alt="Achievement" class="achievement-image">
+<div class="achievement-content">Keep Nsit Ubium Clean initiative.</div>
+</div>
+<div class="achievement-card">
+<img src="REPLACE_ACHIEVEMENT_IMAGE_1" alt="Achievement" class="achievement-image">
+<div class="achievement-content">Hospital bill support for over 200 youths.</div>
+</div>
+<div class="achievement-card">
+<img src="REPLACE_ACHIEVEMENT_IMAGE_2" alt="Achievement" class="achievement-image">
+<div class="achievement-content">Payment of school fees for numerous indigenes.</div>
+</div>
+<div class="achievement-card">
+<img src="REPLACE_ACHIEVEMENT_IMAGE_3" alt="Achievement" class="achievement-image">
+<div class="achievement-content">Renovation of conference hall.</div>
+</div>
+<div class="achievement-card">
+<img src="REPLACE_ACHIEVEMENT_IMAGE_1" alt="Achievement" class="achievement-image">
+<div class="achievement-content">Renovation of chairman's office and executive chamber.</div>
+</div>
+<div class="achievement-card">
+<img src="REPLACE_ACHIEVEMENT_IMAGE_2" alt="Achievement" class="achievement-image">
+<div class="achievement-content">Renovation of legislative chamber.</div>
+</div>
+<div class="achievement-card">
+<img src="REPLACE_ACHIEVEMENT_IMAGE_3" alt="Achievement" class="achievement-image">
+<div class="achievement-content">Purchase of JAMB forms for over 200 candidates.</div>
+</div>
+<div class="achievement-card">
+<img src="REPLACE_ACHIEVEMENT_IMAGE_1" alt="Achievement" class="achievement-image">
+<div class="achievement-content">250 computers at ICT Centre.</div>
+</div>
+<div class="achievement-card">
+<img src="REPLACE_ACHIEVEMENT_IMAGE_2" alt="Achievement" class="achievement-image">
+<div class="achievement-content">24-hour internet and solar systems.</div>
+</div>
+<div class="achievement-card">
+<img src="REPLACE_ACHIEVEMENT_IMAGE_3" alt="Achievement" class="achievement-image">
+<div class="achievement-content">Education Trust Fund for students.</div>
+</div>
+<div class="achievement-card">
+<img src="REPLACE_ACHIEVEMENT_IMAGE_1" alt="Achievement" class="achievement-image">
+<div class="achievement-content">Grading of over 30 rural roads.</div>
+</div>
+<div class="achievement-card">
+<img src="REPLACE_ACHIEVEMENT_IMAGE_2" alt="Achievement" class="achievement-image">
+<div class="achievement-content">Free medical outreach programmes.</div>
+</div>
+<div class="achievement-card">
+<img src="REPLACE_ACHIEVEMENT_IMAGE_3" alt="Achievement" class="achievement-image">
+<div class="achievement-content">Urua Ntakrok modern market project.</div>
+</div>
+<div class="achievement-card">
+<img src="REPLACE_ACHIEVEMENT_IMAGE_1" alt="Achievement" class="achievement-image">
+<div class="achievement-content">Skill acquisition training for 22 indigenes.</div>
+</div>
+<div class="achievement-card">
+<img src="REPLACE_ACHIEVEMENT_IMAGE_2" alt="Achievement" class="achievement-image">
+<div class="achievement-content">Educational materials to 38 schools.</div>
+</div>
+<div class="achievement-card">
+<img src="REPLACE_ACHIEVEMENT_IMAGE_3" alt="Achievement" class="achievement-image">
+<div class="achievement-content">2-hectare demonstration farm.</div>
+</div>
+<div class="achievement-card">
+<img src="REPLACE_ACHIEVEMENT_IMAGE_1" alt="Achievement" class="achievement-image">
+<div class="achievement-content">Educational grants to 53 students.</div>
+</div>
+<div class="achievement-card">
+<img src="REPLACE_ACHIEVEMENT_IMAGE_2" alt="Achievement" class="achievement-image">
+<div class="achievement-content">2026 free JAMB forms.</div>
+</div>
+<div class="achievement-card">
+<img src="REPLACE_ACHIEVEMENT_IMAGE_3" alt="Achievement" class="achievement-image">
+<div class="achievement-content">Landscaping and beautification of secretariat.</div>
+</div>
 </div>
 </section>
 
 <section id="gallery" class="section">
 <h2 class="section-title">Project Gallery</h2>
 <div class="gallery">
-<img id="slider" src="REPLACE_IMAGE_1_LINK" alt="Gallery">
+<div class="gallery-slider">
+<div class="gallery-container">
+<img src="REPLACE_IMAGE_1_LINK" alt="Gallery">
+<img src="REPLACE_IMAGE_2_LINK" alt="Gallery">
+<img src="REPLACE_IMAGE_3_LINK" alt="Gallery">
+</div>
+</div>
+<div class="gallery-controls">
+<span class="gallery-dot active" data-index="0"></span>
+<span class="gallery-dot" data-index="1"></span>
+<span class="gallery-dot" data-index="2"></span>
+</div>
 </div>
 </section>
 
 <section id="testimonials" class="section">
 <h2 class="section-title">Testimonials</h2>
 <div class="testimonials">
-<div class="testimonial">“The bursary and educational support have helped many students continue their studies.”</div>
-<div class="testimonial">“The ICT Centre has improved access to technology and learning.”</div>
-<div class="testimonial">“Community projects have positively impacted residents across Nsit Ubium.”</div>
+<div class="testimonial">"The bursary and educational support have helped many students continue their studies."</div>
+<div class="testimonial">"The ICT Centre has improved access to technology and learning."</div>
+<div class="testimonial">"Community projects have positively impacted residents across Nsit Ubium."</div>
 </div>
 </section>
 
 <section class="section cta">
 <h2>2026 Bursary Programme is Ongoing</h2>
 <p style="max-width:900px;margin:20px auto">
-Students from various higher institutions across Akwa Ibom State are encouraged to participate in the 2026 Nsit Ubium Local Government Bursary Programme. Complete the application form and submit your details for consideration under this educational support initiative.
+Students from various higher institutions across Akwa Ibom State are encouraged to participate in the 2026 Nsit Ubium Local Government Bursary Programme. Complete the application form and submit your [...]
 </p>
 <a href="application.html" class="btn">PROCEED TO APPLICATION FORM</a>
 </section>
@@ -136,13 +234,71 @@ Students from various higher institutions across Akwa Ibom State are encouraged 
 </footer>
 
 <script>
-document.querySelectorAll('.counter').forEach(c=>{
-let t=+c.dataset.target,n=0;
-(function u(){n+=Math.ceil(t/100);if(n<t){c.innerHTML=n.toLocaleString()+"+";requestAnimationFrame(u)}else{c.innerHTML=t.toLocaleString()+"+"}})();
+// Enhanced counter animation with smooth counting
+document.querySelectorAll('.counter').forEach(c => {
+  const targetValue = +c.dataset.target;
+  let currentValue = 0;
+  const animationDuration = 2000; // 2 seconds
+  const startTime = Date.now();
+  
+  function animateCounter() {
+    const elapsed = Date.now() - startTime;
+    const progress = Math.min(elapsed / animationDuration, 1);
+    
+    currentValue = Math.floor(targetValue * progress);
+    c.innerHTML = currentValue.toLocaleString() + "+";
+    
+    if (progress < 1) {
+      requestAnimationFrame(animateCounter);
+    } else {
+      c.innerHTML = targetValue.toLocaleString() + "+";
+    }
+  }
+  
+  // Start animation when element is in view
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        animateCounter();
+        observer.unobserve(entry.target);
+      }
+    });
+  });
+  
+  observer.observe(c);
 });
-const imgs=["REPLACE_IMAGE_1_LINK","REPLACE_IMAGE_2_LINK","REPLACE_IMAGE_3_LINK"];
-let i=0;
-setInterval(()=>{i=(i+1)%imgs.length;document.getElementById('slider').src=imgs[i]},3500);
+
+// Gallery auto-slider with indicators
+const galleryContainer = document.querySelector('.gallery-container');
+const galleryDots = document.querySelectorAll('.gallery-dot');
+let currentSlide = 0;
+const totalSlides = 3;
+const slideInterval = 4000; // 4 seconds
+
+function goToSlide(index) {
+  currentSlide = (index + totalSlides) % totalSlides;
+  const offset = -currentSlide * 100;
+  galleryContainer.style.transform = `translateX(${offset}%)`;
+  
+  galleryDots.forEach(dot => dot.classList.remove('active'));
+  galleryDots[currentSlide].classList.add('active');
+}
+
+// Auto-advance gallery
+let autoSlideInterval = setInterval(() => {
+  goToSlide(currentSlide + 1);
+}, slideInterval);
+
+// Manual navigation
+galleryDots.forEach(dot => {
+  dot.addEventListener('click', () => {
+    clearInterval(autoSlideInterval);
+    goToSlide(+dot.dataset.index);
+    autoSlideInterval = setInterval(() => {
+      goToSlide(currentSlide + 1);
+    }, slideInterval);
+  });
+});
 </script>
 
 </body>
