@@ -7,54 +7,82 @@
 <style>
 :root{--green:#008751;--orange:#ff8c00;--light:#f5fff8;}
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:Arial,sans-serif;line-height:1.6;color:#222}
 html{scroll-behavior:smooth}
-nav{position:fixed;top:0;width:100%;background:var(--green);padding:15px 5%;display:flex;justify-content:space-between;align-items:center;z-index:1000;color:#fff}
-.logo-link{display:flex;gap:10px;text-decoration:none}
-.logo-box{width:55px;height:55px;background:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--green);font-size:11px;text-align:center;overflow:hidden}
-.logo-box img{width:100%;height:100%;object-fit:cover;border-radius:50%}
+body{font-family:Arial,sans-serif;line-height:1.6;color:#222;background:#fff}
+
+nav{position:fixed;top:0;width:100%;background:var(--green);padding:15px 5%;display:flex;justify-content:space-between;align-items:center;z-index:1000}
 nav a{color:#fff;text-decoration:none;margin-left:15px}
-.hero{margin-top:85px;background:linear-gradient(rgba(0,135,81,.88),rgba(0,135,81,.88));color:#fff;padding:80px 5%}
+.logo-link{display:flex;gap:10px;text-decoration:none}
+.logo-box{width:55px;height:55px;border-radius:50%;overflow:hidden;background:#fff}
+.logo-box img{width:100%;height:100%;object-fit:cover}
+
+.hero{
+margin-top:85px;
+background:linear-gradient(rgba(0,135,81,.75),rgba(0,135,81,.75)),
+url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhaYjdvY1lU5tDOt5iDnijmN8Mf8Gc2Sw6G2f4nLPPy8b7RdyAOMWKsYQOGVd7PtWpkl-E7nkShODNnr3SJCHrbX-7b-ZXtwHh0TIUYBLFVIdvBl3w9m6A_CYmeMTiB-t_1CNVLnLc6ertigfc2MkqIqbcfLeGYLkaZLPoliu8-wIHemaNxJIJIfg7JCU3l/s1254/ChatGPT%20Image%20Jun%2013,%202026,%2009_46_41%20AM.png');
+background-size:cover;
+background-position:center;
+color:#fff;
+padding:80px 5%;
+}
 .hero-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:30px;align-items:center}
+.hero-title{font-size:50px;font-weight:800;margin-bottom:15px}
 .hero img{width:100%;max-width:450px;border-radius:20px;border:5px solid #fff}
-.btn{display:inline-block;background:var(--orange);padding:14px 28px;border-radius:8px;color:#fff;text-decoration:none;font-weight:bold}
-.section{padding:70px 5%}
-.section-title{text-align:center;margin-bottom:30px;color:var(--green)}
+
+.section{padding:80px 5%}
+.section-title{text-align:center;font-size:36px;margin-bottom:40px;color:var(--green)}
+
+.btn{
+display:inline-block;background:var(--orange);color:#fff;
+padding:15px 30px;border-radius:50px;text-decoration:none;font-weight:bold
+}
+
 .stats{background:var(--green);color:#fff}
-.stats-grid,.testimonials{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.stat-item{text-align:center;background:rgba(255,255,255,.1);padding:30px;border-radius:15px}
 .counter{font-size:42px;font-weight:bold}
-.stat-item{text-align:center}
-.stat-item p{margin-top:10px;font-size:16px}
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
-.card,.testimonial{background:#fff;padding:20px;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,.1)}
-.card{border-top:5px solid var(--orange)}
-.achievement-card{display:flex;flex-direction:column;height:100%;background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,.1)}
-.achievement-image{width:100%;height:200px;object-fit:cover;background:#f0f0f0;display:flex;align-items:center;justify-content:center;color:#999;font-size:14px}
-.achievement-content{padding:15px;flex-grow:1;display:flex;align-items:center;justify-content:center;text-align:center;border-top:5px solid var(--orange)}
-.gallery{max-width:900px;margin:auto;position:relative}
-.gallery-slider{position:relative;width:100%;overflow:hidden;border-radius:15px}
-.gallery-container{display:flex;transition:transform 0.5s ease-in-out}
-.gallery img{width:100%;height:450px;object-fit:cover;border-radius:15px;flex-shrink:0}
-.gallery-controls{text-align:center;margin-top:15px}
-.gallery-dot{display:inline-block;width:12px;height:12px;margin:0 5px;background:#ccc;border-radius:50%;cursor:pointer;transition:background 0.3s}
+
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:25px}
+.achievement-card{
+background:#fff;border-radius:15px;overflow:hidden;
+box-shadow:0 5px 20px rgba(0,0,0,.1)
+}
+.achievement-image{width:100%;height:220px;object-fit:cover}
+.achievement-content{padding:20px}
+
+.gallery-slider{overflow:hidden;border-radius:15px}
+.gallery-container{display:flex;width:300%;transition:.5s ease}
+.gallery-container img{width:100%;height:450px;object-fit:cover}
+
+.gallery-controls{display:flex;justify-content:center;gap:10px;margin-top:15px}
+.gallery-dot{width:12px;height:12px;border-radius:50%;background:#ccc;cursor:pointer}
 .gallery-dot.active{background:var(--green)}
-.cta{background:var(--light);text-align:center}
-footer{background:#004d2e;color:#fff;padding:30px;text-align:center}
+
+.testimonials{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+.testimonial{padding:25px;border-radius:15px;box-shadow:0 5px 20px rgba(0,0,0,.08)}
+
+.cta{text-align:center;background:var(--green);color:#fff}
+
+footer{background:#111;color:#fff;text-align:center;padding:30px}
+
 @media(max-width:768px){
-  .hero-grid{grid-template-columns:1fr}
-  .gallery img{height:260px}
-  .achievement-image{height:150px}
+.hero-grid{grid-template-columns:1fr;text-align:center}
+.hero-title{font-size:30px}
+.hero img{max-width:280px;margin:auto;display:block}
+.stats-grid{grid-template-columns:1fr 1fr}
+.gallery-container img{height:250px}
+.section-title{font-size:28px}
 }
 </style>
 </head>
 <body>
 
 <nav>
-<a href="#" class="logo-link">
-<div class="logo-box"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhDthKpEBnR9OZaWqZrGczVjG8Guwl_1vo9C5f9ll7QH4zKwXu5IYvQPJPFWLdHM7L0AND5QzZi8KXHAWXZwDctQgN4dZVX0MFtBR74q4G2C_Szum_dy9-A5lzX83bqRIEEEnu23ZXcRUmgbwivInMbPgWxoARHo9y4XSL-QgIw4rvLGDLxbQ936jyDGxzo/s640/WhatsApp%20Image%202026-06-13%20at%207.52.20%20AM.jpeg" alt="Logo 1"></div>
-<div class="logo-box"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEioqUONWjVO9E-yE3E5549MJWkGTpux9NYrTux1YimQC4sRfQ-nBfub5osUtOworkrvPpsCDeFqiAQNpdE6vpmaRfsDGBZ5U5aKs16WqtcAL_kvLeLJWjE7FOw5zJJI3Cf0KgktHw3NCf9oG4sBxTdqJnnQQtKSqHKRRd9Fu6i50cD060JZ88wJ_bFwu59b/s1254/ChatGPT%20Image%20Jun%2013,%202026,%2009_40_16%20AM.png" alt="Logo 2"></div>
-<div class="logo-box"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhaYjdvY1lU5tDOt5iDnijmN8Mf8Gc2Sw6G2f4nLPPy8b7RdyAOMWKsYQOGVd7PtWpkl-E7nkShODNnr3SJCHrbX-7b-ZXtwHh0TIUYBLFVIdvBl3w9m6A_CYmeMTiB-t_1CNVLnLc6ertigfc2MkqIqbcfLeGYLkaZLPoliu8-wIHemaNxJIJIfg7JCU3l/s1254/ChatGPT%20Image%20Jun%2013,%202026,%2009_46_41%20AM.png" alt="Logo 3"></div>
-</a>
+<div class="logo-link">
+<div class="logo-box"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhDthKpEBnR9OZaWqZrGczVjG8Guwl_1vo9C5f9ll7QH4zKwXu5IYvQPJPFWLdHM7L0AND5QzZi8KXHAWXZwDctQgN4dZVX0MFtBR74q4G2C_Szum_dy9-A5lzX83bqRIEEEnu23ZXcRUmgbwivInMbPgWxoARHo9y4XSL-QgIw4rvLGDLxbQ936jyDGxzo/s640/WhatsApp%20Image%202026-06-13%20at%207.52.20%20AM.jpeg"></div>
+<div class="logo-box"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEioqUONWjVO9E-yE3E5549MJWkGTpux9NYrTux1YimQC4sRfQ-nBfub5osUtOworkrvPpsCDeFqiAQNpdE6vpmaRfsDGBZ5U5aKs16WqtcAL_kvLeLJWjE7FOw5zJJI3Cf0KgktHw3NCf9oG4sBxTdqJnnQQtKSqHKRRd9Fu6i50cD060JZ88wJ_bFwu59b/s1254/ChatGPT%20Image%20Jun%2013,%202026,%2009_40_16%20AM.png"></div>
+<div class="logo-box"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhaYjdvY1lU5tDOt5iDnijmN8Mf8Gc2Sw6G2f4nLPPy8b7RdyAOMWKsYQOGVd7PtWpkl-E7nkShODNnr3SJCHrbX-7b-ZXtwHh0TIUYBLFVIdvBl3w9m6A_CYmeMTiB-t_1CNVLnLc6ertigfc2MkqIqbcfLeGYLkaZLPoliu8-wIHemaNxJIJIfg7JCU3l/s1254/ChatGPT%20Image%20Jun%2013,%202026,%2009_46_41%20AM.png"></div>
+</div>
 <div>
 <a href="#achievements">Achievements</a>
 <a href="#gallery">Gallery</a>
@@ -67,7 +95,7 @@ footer{background:#004d2e;color:#fff;padding:30px;text-align:center}
 <div class="hero-grid">
 <div>
 <h3>NSIT UBIOM LOCAL GOVERNMENT PORTAL 2026</h3>
-<h1 style="font-size:50px">NSIT UBIOM LOCAL GOVERNMENT BURSARY 2026</h1>
+<h1 class="hero-title">NSIT UBIOM LOCAL GOVERNMENT BURSARY 2026</h1>
 <p>Empowering students through educational support, innovation and community development.</p><br>
 <a href="application.html" class="btn">APPLY NOW</a>
 </div>
@@ -86,123 +114,22 @@ footer{background:#004d2e;color:#fff;padding:30px;text-align:center}
 </div>
 </section>
 
-<section class="section">
-<h2 class="section-title">Message from the Chairman</h2>
-<p style="max-width:1000px;margin:auto;text-align:center">
-Hon. Alfred Charles remains committed to educational advancement, youth empowerment and sustainable development throughout Nsit Ubium Local Government Area.
-</p>
-</section>
-
 <section id="achievements" class="section">
-<h2 class="section-title">Achievements of Hon. Alfred Charles</h2>
+<h2 class="section-title">Achievements</h2>
 <div class="cards">
-<div class="achievement-card">
-<img src="REPLACE_ACHIEVEMENT_IMAGE_1" alt="Achievement" class="achievement-image">
-<div class="achievement-content">Promotion and preservation of Nsit Ubium cultural heritage.</div>
-</div>
-<div class="achievement-card">
-<img src="REPLACE_ACHIEVEMENT_IMAGE_2" alt="Achievement" class="achievement-image">
-<div class="achievement-content">Solar-powered street lights installation.</div>
-</div>
-<div class="achievement-card">
-<img src="REPLACE_ACHIEVEMENT_IMAGE_3" alt="Achievement" class="achievement-image">
-<div class="achievement-content">Security partnership with Nigerian Peace Corps personnel.</div>
-</div>
-<div class="achievement-card">
-<img src="REPLACE_ACHIEVEMENT_IMAGE_1" alt="Achievement" class="achievement-image">
-<div class="achievement-content">Employment of 12 casual staff.</div>
-</div>
-<div class="achievement-card">
-<img src="REPLACE_ACHIEVEMENT_IMAGE_2" alt="Achievement" class="achievement-image">
-<div class="achievement-content">1,666M perimeter fencing of council premises.</div>
-</div>
-<div class="achievement-card">
-<img src="REPLACE_ACHIEVEMENT_IMAGE_3" alt="Achievement" class="achievement-image">
-<div class="achievement-content">Keep Nsit Ubium Clean initiative.</div>
-</div>
-<div class="achievement-card">
-<img src="REPLACE_ACHIEVEMENT_IMAGE_1" alt="Achievement" class="achievement-image">
-<div class="achievement-content">Hospital bill support for over 200 youths.</div>
-</div>
-<div class="achievement-card">
-<img src="REPLACE_ACHIEVEMENT_IMAGE_2" alt="Achievement" class="achievement-image">
-<div class="achievement-content">Payment of school fees for numerous indigenes.</div>
-</div>
-<div class="achievement-card">
-<img src="REPLACE_ACHIEVEMENT_IMAGE_3" alt="Achievement" class="achievement-image">
-<div class="achievement-content">Renovation of conference hall.</div>
-</div>
-<div class="achievement-card">
-<img src="REPLACE_ACHIEVEMENT_IMAGE_1" alt="Achievement" class="achievement-image">
-<div class="achievement-content">Renovation of chairman's office and executive chamber.</div>
-</div>
-<div class="achievement-card">
-<img src="REPLACE_ACHIEVEMENT_IMAGE_2" alt="Achievement" class="achievement-image">
-<div class="achievement-content">Renovation of legislative chamber.</div>
-</div>
-<div class="achievement-card">
-<img src="REPLACE_ACHIEVEMENT_IMAGE_3" alt="Achievement" class="achievement-image">
-<div class="achievement-content">Purchase of JAMB forms for over 200 candidates.</div>
-</div>
-<div class="achievement-card">
-<img src="REPLACE_ACHIEVEMENT_IMAGE_1" alt="Achievement" class="achievement-image">
-<div class="achievement-content">250 computers at ICT Centre.</div>
-</div>
-<div class="achievement-card">
-<img src="REPLACE_ACHIEVEMENT_IMAGE_2" alt="Achievement" class="achievement-image">
-<div class="achievement-content">24-hour internet and solar systems.</div>
-</div>
-<div class="achievement-card">
-<img src="REPLACE_ACHIEVEMENT_IMAGE_3" alt="Achievement" class="achievement-image">
-<div class="achievement-content">Education Trust Fund for students.</div>
-</div>
-<div class="achievement-card">
-<img src="REPLACE_ACHIEVEMENT_IMAGE_1" alt="Achievement" class="achievement-image">
-<div class="achievement-content">Grading of over 30 rural roads.</div>
-</div>
-<div class="achievement-card">
-<img src="REPLACE_ACHIEVEMENT_IMAGE_2" alt="Achievement" class="achievement-image">
-<div class="achievement-content">Free medical outreach programmes.</div>
-</div>
-<div class="achievement-card">
-<img src="REPLACE_ACHIEVEMENT_IMAGE_3" alt="Achievement" class="achievement-image">
-<div class="achievement-content">Urua Ntakrok modern market project.</div>
-</div>
-<div class="achievement-card">
-<img src="REPLACE_ACHIEVEMENT_IMAGE_1" alt="Achievement" class="achievement-image">
-<div class="achievement-content">Skill acquisition training for 22 indigenes.</div>
-</div>
-<div class="achievement-card">
-<img src="REPLACE_ACHIEVEMENT_IMAGE_2" alt="Achievement" class="achievement-image">
-<div class="achievement-content">Educational materials to 38 schools.</div>
-</div>
-<div class="achievement-card">
-<img src="REPLACE_ACHIEVEMENT_IMAGE_3" alt="Achievement" class="achievement-image">
-<div class="achievement-content">2-hectare demonstration farm.</div>
-</div>
-<div class="achievement-card">
-<img src="REPLACE_ACHIEVEMENT_IMAGE_1" alt="Achievement" class="achievement-image">
-<div class="achievement-content">Educational grants to 53 students.</div>
-</div>
-<div class="achievement-card">
-<img src="REPLACE_ACHIEVEMENT_IMAGE_2" alt="Achievement" class="achievement-image">
-<div class="achievement-content">2026 free JAMB forms.</div>
-</div>
-<div class="achievement-card">
-<img src="REPLACE_ACHIEVEMENT_IMAGE_3" alt="Achievement" class="achievement-image">
-<div class="achievement-content">Landscaping and beautification of secretariat.</div>
-</div>
+<div class="achievement-card"><img class="achievement-image" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg7yTXC-bgygPftKtehNhoQZuWZHc0bfxqvu-2FKlJOBY0akWZtz_RP1WAAVQyaK74xGCXnPGW9BpJpQ-Sl-yOpEJ6g7VwXirNgN8qnLBsMx84gsHExGN1mq6LozI0sVSo5GuO2Ei_4-U_BMTX3Bij26U8OQqm8MYesZO3Rw6sJYdKWQe-IYBHJcEvHJLcR/s1280/WhatsApp%20Image%202026-06-12%20at%206.56.00%20PM%20(1).jpeg"><div class="achievement-content">Educational grants to students.</div></div>
+<div class="achievement-card"><img class="achievement-image" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhYi86XWIg7mpxE4T7D2pMiyk03FTdmw_KkR1M-xvXr9muAQrkF5PLDvlDkvBHHv4VJ8i8Iy3rwHZYvZlXEf4iF-l1y6RVi5CKU2Etyyi0dCJnlpuWnPc4i8OFhnGp3lu4IaTRsf7hncfRl8nJNwvo3gtT4z2ah6R2tdYl_jyCas6vPTccbDwqwyu4_T7Lm/s1080/WhatsApp%20Image%202026-06-12%20at%206.57.30%20PM%20(1).jpeg"><div class="achievement-content">Purchase of JAMB forms.</div></div>
+<div class="achievement-card"><img class="achievement-image" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj9Qa4zlQYJUekE7CQM2W6erGweE2lMoMdWK8czpkgW_Cd7kUIUhkrnL9c-h9DUrxZjO-9FxkqIcvBXrz3L7XJjkH0rupsUHKZ2QKyEpErUUwQUkWZxu3sk-kILc8UCLqg1CCZiSufQHJRpeiJWahXdQSi3VNY3can_6NgfxN8PJ6QjKRLdJxXJrimy7ffr/s720/WhatsApp%20Image%202026-06-12%20at%206.55.59%20PM%20(1).jpeg"><div class="achievement-content">ICT Centre with 250 computers.</div></div>
 </div>
 </section>
 
 <section id="gallery" class="section">
 <h2 class="section-title">Project Gallery</h2>
-<div class="gallery">
 <div class="gallery-slider">
 <div class="gallery-container">
-<img src="REPLACE_IMAGE_1_LINK" alt="Gallery">
-<img src="REPLACE_IMAGE_2_LINK" alt="Gallery">
-<img src="REPLACE_IMAGE_3_LINK" alt="Gallery">
+<img src="https://via.placeholder.com/1200x600">
+<img src="https://via.placeholder.com/1200x600">
+<img src="https://via.placeholder.com/1200x600">
 </div>
 </div>
 <div class="gallery-controls">
@@ -210,96 +137,52 @@ Hon. Alfred Charles remains committed to educational advancement, youth empowerm
 <span class="gallery-dot" data-index="1"></span>
 <span class="gallery-dot" data-index="2"></span>
 </div>
-</div>
 </section>
 
 <section id="testimonials" class="section">
 <h2 class="section-title">Testimonials</h2>
 <div class="testimonials">
-<div class="testimonial">"The bursary and educational support have helped many students continue their studies."</div>
-<div class="testimonial">"The ICT Centre has improved access to technology and learning."</div>
-<div class="testimonial">"Community projects have positively impacted residents across Nsit Ubium."</div>
+<div class="testimonial">The bursary programme has helped many students.</div>
+<div class="testimonial">The ICT centre improved digital learning.</div>
+<div class="testimonial">Community projects have impacted residents positively.</div>
 </div>
 </section>
 
 <section class="section cta">
 <h2>2026 Bursary Programme is Ongoing</h2>
-<p style="max-width:900px;margin:20px auto">
-Students from various higher institutions across Akwa Ibom State are encouraged to participate in the 2026 Nsit Ubium Local Government Bursary Programme. Complete the application form and submit your [...]
-</p>
+<p>Apply now and complete your application.</p><br>
 <a href="application.html" class="btn">PROCEED TO APPLICATION FORM</a>
 </section>
 
 <footer>
 <p>NSIT UBIOM LOCAL GOVERNMENT PORTAL 2026</p>
-<p>Replace logo placeholders, chairman image and gallery image links before publishing.</p>
 </footer>
 
 <script>
-// Enhanced counter animation with smooth counting
-document.querySelectorAll('.counter').forEach(c => {
-  const targetValue = +c.dataset.target;
-  let currentValue = 0;
-  const animationDuration = 2000; // 2 seconds
-  const startTime = Date.now();
-
-  function animateCounter() {
-    const elapsed = Date.now() - startTime;
-    const progress = Math.min(elapsed / animationDuration, 1);
-
-    currentValue = Math.floor(targetValue * progress);
-    c.innerHTML = currentValue.toLocaleString() + "+";
-
-    if (progress < 1) {
-      requestAnimationFrame(animateCounter);
-    } else {
-      c.innerHTML = targetValue.toLocaleString() + "+";
-    }
-  }
-
-  // Start animation when element is in view
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        animateCounter();
-        observer.unobserve(entry.target);
-      }
-    });
-  });
-
-  observer.observe(c);
+document.querySelectorAll('.counter').forEach(c=>{
+const target=+c.dataset.target;
+let current=0;
+const step=Math.ceil(target/100);
+const timer=setInterval(()=>{
+current+=step;
+if(current>=target){current=target;clearInterval(timer);}
+c.textContent=current.toLocaleString()+"+";
+},20);
 });
 
-// Gallery auto-slider with indicators
-const galleryContainer = document.querySelector('.gallery-container');
-const galleryDots = document.querySelectorAll('.gallery-dot');
-let currentSlide = 0;
-const totalSlides = 3;
-const slideInterval = 4000; // 4 seconds
+const galleryContainer=document.querySelector('.gallery-container');
+const galleryDots=document.querySelectorAll('.gallery-dot');
+let currentSlide=0;
 
-function goToSlide(index) {
-  currentSlide = (index + totalSlides) % totalSlides;
-  const offset = -currentSlide * 100;
-  galleryContainer.style.transform = `translateX(${offset}%)`;
-
-  galleryDots.forEach(dot => dot.classList.remove('active'));
-  galleryDots[currentSlide].classList.add('active');
+function goToSlide(index){
+currentSlide=index;
+galleryContainer.style.transform=`translateX(-${index*33.333}%)`;
+galleryDots.forEach(d=>d.classList.remove('active'));
+galleryDots[index].classList.add('active');
 }
 
-// Auto-advance gallery
-let autoSlideInterval = setInterval(() => {
-  goToSlide(currentSlide + 1);
-}, slideInterval);
-
-// Manual navigation
-galleryDots.forEach(dot => {
-  dot.addEventListener('click', () => {
-    clearInterval(autoSlideInterval);
-    goToSlide(+dot.dataset.index);
-    autoSlideInterval = setInterval(() => {
-      goToSlide(currentSlide + 1);
-    }, slideInterval);
-  });
+galleryDots.forEach(dot=>{
+dot.addEventListener('click',()=>goToSlide(+dot.dataset.index));
 });
 </script>
 
