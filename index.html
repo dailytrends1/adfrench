@@ -1,556 +1,917 @@
-<!--
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>NSIT UBIUM LOCAL GOVERNMENT BURSARY 2026</title>
-<style>
-:root{--green:#008751;--orange:#ff8c00;--light:#f5fff8;}
-*{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{font-family:Arial,sans-serif;line-height:1.6;color:#222;background:#fff}
+  <!-- TikTok Pixel Code Start -->
+  <script>
+    !function (w, d, t) {
+      w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(
+        var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var r="https://analytics.tiktok.com/i18n/pixel/events.js",o=n&&n.partner;ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script")
+        ;n.type="text/javascript",n.async=!0,n.src=r+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};
 
-nav{position:fixed;top:0;width:100%;background:var(--green);padding:15px 5%;display:justify-content:space-between;;align-items:center;z-index:1000}
-nav a{color:#fff;text-decoration:none;margin-left:15px}
-.logo-link{display:flex;gap:10px;text-decoration:none}
-.logo-box{width:55px;height:55px;border-radius:50%;overflow:hidden;background:#fff}
-.logo-box img{width:100%;height:100%;object-fit:cover}
+      ttq.load('DA4O4ARC77UC8FLIVM00');
+      ttq.page();
+    }(window, document, 'ttq');
+  </script>
+  <!-- TikTok Pixel Code End -->
 
-.hero{
-margin-top:0;
-background:
-linear-gradient(rgba(0,135,81,.80),rgba(0,135,81,.80)),
-url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhaYjdvY1lU5tDOt5iDnijmN8Mf8Gc2Sw6G2f4nLPPy8b7RdyAOMWKsYQOGVd7PtWpkl-E7nkShODNnr3SJCHrbX-7b-ZXtwHh0TIUYBLFVIdvBl3w9m6A_CYmeMTiB-t_1CNVLnLc6ertigfc2MkqIqbcfLeGYLkaZLPoliu8-wIHemaNxJIJIfg7JCU3l/s1254/ChatGPT%20Image%20Jun%2013,%202026,%2009_46_41%20AM.png');
-background-size:cover;
-background-position:center;
-background-repeat:no-repeat;
-color:#fff;
-padding:60px 5%;
-min-height:70vh;
-display:flex;
-align-items:center;
-}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5">
+  <title>PromiseTech Academy · Certified Affiliate & AI Creator</title>
+  <!-- Bootstrap 5 + Font Awesome 6 (Free) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- Google Font: Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #0b0d15;
+      color: #eef2f7;
+      overflow-x: hidden;
+      padding-bottom: 90px; /* space for sticky bottom bar */
+    }
+    .glass {
+      background: rgba(255,255,255,0.05);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 24px;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+    }
+    .gradient-primary {
+      background: linear-gradient(145deg, #0A84FF, #0066cc);
+      color: #fff;
+      border: none;
+    }
+    .gradient-secondary {
+      background: linear-gradient(145deg, #00C853, #009624);
+      color: #fff;
+      border: none;
+    }
+    .btn-glow {
+      transition: all 0.25s ease;
+      box-shadow: 0 0 15px rgba(10, 132, 255, 0.3);
+    }
+    .btn-glow:hover {
+      transform: scale(1.02);
+      box-shadow: 0 0 30px rgba(10, 132, 255, 0.6);
+    }
+    .text-primary-custom { color: #0A84FF; }
+    .text-secondary-custom { color: #00C853; }
+    .bg-dark-card {
+      background: rgba(18, 22, 34, 0.7);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255,255,255,0.03);
+    }
+    .floating-ai {
+      position: absolute;
+      font-size: 6rem;
+      opacity: 0.08;
+      pointer-events: none;
+      z-index: 0;
+      animation: floatGlow 12s infinite alternate ease-in-out;
+    }
+    @keyframes floatGlow {
+      0% { transform: translateY(0px) scale(1) rotate(0deg); opacity: 0.05; }
+      100% { transform: translateY(-40px) scale(1.1) rotate(6deg); opacity: 0.15; }
+    }
+    .hero-section {
+      position: relative;
+      overflow: hidden;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      background: radial-gradient(circle at 20% 30%, #0f1a2e, #070a12);
+      padding-top: 100px !important;
+    }
+    .hero-section .container { position: relative; z-index: 2; }
+    .trust-badge {
+      background: rgba(0, 200, 83, 0.15);
+      padding: 0.4rem 1.2rem;
+      border-radius: 60px;
+      font-size: 0.85rem;
+      border-left: 3px solid #00C853;
+    }
+    .icon-card {
+      background: rgba(255,255,255,0.02);
+      backdrop-filter: blur(4px);
+      border: 1px solid rgba(255,255,255,0.04);
+      border-radius: 20px;
+      padding: 1.5rem 1rem;
+      transition: 0.3s;
+      height: 100%;
+    }
+    .icon-card:hover {
+      transform: translateY(-8px);
+      background: rgba(10, 132, 255, 0.08);
+      border-color: #0A84FF;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    }
+    .icon-card i { font-size: 2.4rem; color: #0A84FF; }
+    .timeline-step {
+      position: relative;
+      padding-left: 2rem;
+      border-left: 3px solid #0A84FF;
+      margin-bottom: 2.2rem;
+    }
+    .timeline-step:last-child { border-left: 3px solid transparent; }
+    .timeline-step .step-number {
+      position: absolute;
+      left: -14px;
+      top: -6px;
+      background: #0A84FF;
+      width: 28px;
+      height: 28px;
+      border-radius: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.8rem;
+      font-weight: 700;
+    }
+    .testimonial-card {
+      background: rgba(255,255,255,0.03);
+      backdrop-filter: blur(6px);
+      border: 1px solid rgba(255,255,255,0.04);
+      border-radius: 24px;
+      padding: 1.8rem 1.5rem;
+      transition: 0.3s;
+    }
+    .testimonial-card:hover { background: rgba(10, 132, 255, 0.06); }
+    .testimonial-card img {
+      width: 60px;
+      height: 60px;
+      border-radius: 100px;
+      object-fit: cover;
+      border: 3px solid #0A84FF;
+    }
+    .pricing-card {
+      background: rgba(255,255,255,0.02);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(10, 132, 255, 0.2);
+      border-radius: 40px;
+      padding: 2.5rem 2rem;
+      max-width: 420px;
+      margin: 0 auto;
+    }
+    .pricing-card .price { font-size: 3.8rem; font-weight: 700; color: #00C853; }
+    .nav-sticky {
+      background: rgba(11, 13, 21, 0.85);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(255,255,255,0.03);
+      transition: 0.3s;
+      position: relative;
+      z-index: 999;
+    }
+    .nav-sticky .navbar-brand { font-weight: 700; letter-spacing: -0.3px; }
+    .section-title {
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      position: relative;
+    }
+    .section-title:after {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 4px;
+      background: linear-gradient(90deg, #0A84FF, #00C853);
+      margin-top: 10px;
+      border-radius: 10px;
+    }
+    .faq-item {
+      background: rgba(255,255,255,0.02);
+      border-radius: 16px;
+      padding: 1rem 1.5rem;
+      margin-bottom: 0.8rem;
+      border-left: 4px solid #0A84FF;
+    }
+    .footer-links a {
+      color: #aab;
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: 0.2s;
+    }
+    .footer-links a:hover { color: #0A84FF; }
+    .counter-number {
+      font-size: 2.6rem;
+      font-weight: 700;
+      color: #0A84FF;
+    }
+    /* result screenshot cards */
+    .result-card {
+      background: rgba(255,255,255,0.02);
+      backdrop-filter: blur(6px);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 24px;
+      overflow: hidden;
+      transition: 0.3s;
+    }
+    .result-card:hover { transform: scale(1.01); border-color: #0A84FF; }
+    .result-card img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
+    .result-card .card-body { padding: 1rem 1.2rem; }
+    .video-wrapper {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 */
+      height: 0;
+      border-radius: 28px;
+      overflow: hidden;
+      background: #000;
+      border: 1px solid rgba(255,255,255,0.05);
+    }
+    .video-wrapper iframe {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      border: 0;
+    }
+    /* student testimonial picture cards (4-up) */
+    .testimonial-pic-card {
+      background: rgba(255,255,255,0.02);
+      backdrop-filter: blur(4px);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 24px;
+      overflow: hidden;
+      transition: 0.3s;
+      text-align: center;
+    }
+    .testimonial-pic-card:hover { transform: translateY(-6px); border-color: #0A84FF; }
+    .testimonial-pic-card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
+    .testimonial-pic-card .card-body { padding: 1rem; }
+    /* STICKY COUNTDOWN BAR - fixed at top */
+    .countdown-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: linear-gradient(90deg, #0A84FF, #00C853);
+      padding: 10px 0;
+      text-align: center;
+      font-weight: 600;
+      font-size: 1rem;
+      z-index: 9999;
+      box-shadow: 0 2px 20px rgba(10, 132, 255, 0.3);
+    }
+    .countdown-bar .countdown-timer {
+      background: rgba(0,0,0,0.3);
+      padding: 4px 18px;
+      border-radius: 40px;
+      display: inline-block;
+      font-weight: 700;
+      color: #fff;
+    }
+    /* Navbar now sits below countdown */
+    .nav-sticky {
+      margin-top: 52px; /* height of countdown bar */
+    }
+    /* Sticky bottom bar */
+    .sticky-bottom-bar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(11, 13, 21, 0.92);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-top: 1px solid rgba(255,255,255,0.06);
+      padding: 12px 0;
+      z-index: 9999;
+      transition: 0.3s;
+    }
+    .sticky-bottom-bar .btn {
+      font-weight: 600;
+      padding: 10px 28px;
+      border-radius: 60px;
+      font-size: 0.95rem;
+    }
+    .sticky-bottom-bar .price-tag {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: #00C853;
+      margin-right: 12px;
+    }
+    @media (max-width: 576px) {
+      .sticky-bottom-bar .btn { font-size: 0.8rem; padding: 8px 16px; }
+      .sticky-bottom-bar .price-tag { font-size: 1rem; }
+      .countdown-bar { font-size: 0.8rem; padding: 8px 0; }
+      body { padding-bottom: 80px; }
+      .nav-sticky { margin-top: 44px; }
+    }
+    /* ===== Selar-style Checkout Overlay ===== */
+    :root {
+      --selar-purple: #6E2FCB;
+      --selar-purple-dark: #4B1C99;
+      --selar-purple-light: #F3ECFC;
+      --selar-text: #1A1A2E;
+    }
+    .selar-btn {
+      background: var(--selar-purple);
+      color: #fff;
+      border: none;
+      font-weight: 600;
+      border-radius: 10px;
+      padding: 14px 28px;
+      font-size: 1rem;
+      transition: 0.2s ease;
+      box-shadow: 0 4px 14px rgba(110, 47, 203, 0.35);
+    }
+    .selar-btn:hover {
+      background: var(--selar-purple-dark);
+      color: #fff;
+      transform: translateY(-1px);
+      box-shadow: 0 6px 18px rgba(110, 47, 203, 0.45);
+    }
+    .selar-btn-outline {
+      background: #fff;
+      color: var(--selar-purple);
+      border: 1.5px solid var(--selar-purple);
+      font-weight: 600;
+      border-radius: 10px;
+      padding: 10px 20px;
+      font-size: 0.85rem;
+      transition: 0.2s ease;
+    }
+    .selar-btn-outline:hover { background: var(--selar-purple-light); }
 
-.hero-grid{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:40px;
-align-items:center;
-width:100%;
-}
-
-.hero h3{
-font-size:20px;
-margin-bottom:10px;
-font-weight:600;
-}
-
-.hero-title{
-font-size:52px;
-font-weight:800;
-line-height:1.1;
-margin-bottom:15px;
-}
-
-.hero p{
-font-size:18px;
-max-width:550px;
-}
-
-.hero img{
-width:100%;
-max-width:380px;
-display:block;
-margin:auto;
-border-radius:20px;
-border:5px solid #fff;
-box-shadow:0 10px 25px rgba(0,0,0,.25);
-}
-
-.section{padding:80px 5%}
-.section-title{text-align:center;font-size:36px;margin-bottom:40px;color:var(--green)}
-
-.btn{
-display:inline-block;background:var(--orange);color:#fff;
-padding:15px 30px;border-radius:50px;text-decoration:none;font-weight:bold
-}
-
-.stats{background:var(--green);color:#fff}
-.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
-.stat-item{text-align:center;background:rgba(255,255,255,.1);padding:30px;border-radius:15px}
-.counter{font-size:42px;font-weight:bold}
-
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:25px}
-.achievement-card{
-background:#fff;border-radius:15px;overflow:hidden;
-box-shadow:0 5px 20px rgba(0,0,0,.1)
-}
-.achievement-image{width:100%;height:220px;object-fit:cover}
-.achievement-content{padding:20px}
-
-.gallery-slider{
-position:relative;
-overflow:hidden;
-border-radius:15px;
-max-width:1200px;
-margin:auto;
-}
-
-.gallery-container{
-display:flex;
-transition:transform .8s ease;
-}
-
-.gallery-slide{
-min-width:100%;
-}
-
-.gallery-slide img{
-width:100%;
-height:450px;
-object-fit:cover;
-display:block;
-}
-
-.gallery-controls{
-display:flex;
-justify-content:center;
-gap:10px;
-margin-top:15px;
-}
-
-.gallery-dot{
-width:12px;
-height:12px;
-border-radius:50%;
-background:#ccc;
-cursor:pointer;
-transition:.3s;
-}
-
-.gallery-dot.active{
-background:var(--green);
-}
-
-@media(max-width:768px){
-
-.gallery-slide img{
-height:220px;
-}
-
-}
-
-.testimonials{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
-.testimonial{padding:25px;border-radius:15px;box-shadow:0 5px 20px rgba(0,0,0,.08)}
-
-.cta{text-align:center;background:var(--green);color:#fff}
-
-footer{background:#111;color:#fff;text-align:center;padding:30px}
-
-
-nav{
-padding:10px 3%;
-flex-direction:column;
-gap:10px;
-}
-
-nav{
-position:fixed;
-top:0;
-width:100%;
-background:var(--green);
-padding:15px 5%;
-display:flex;
-justify-content:center;
-align-items:center;
-z-index:1000;
-}
-
-.logo-link{
-display:flex;
-gap:10px;
-justify-content:center;
-align-items:center;
-}
-
-.logo-box{
-width:55px;
-height:55px;
-border-radius:50%;
-overflow:hidden;
-background:#fff;
-}
-
-.logo-box img{
-width:100%;
-height:100%;
-object-fit:cover;
-}
-
-@media(max-width:768px){
-
-nav{
-padding:10px;
-}
-
-.logo-box{
-width:45px;
-height:45px;
-}
-
-}
-
-.logo-box{
-width:42px;
-height:42px;
-}
-
-.hero{
-margin-top:0;
-padding:40px 20px;
-min-height:auto;
-text-align:center;
-}
-
-.hero-grid{
-grid-template-columns:1fr;
-gap:25px;
-}
-
-.hero h3{
-font-size:14px;
-}
-
-.hero-title{
-font-size:26px;
-line-height:1.2;
-}
-
-.hero p{
-font-size:15px;
-max-width:100%;
-}
-
-.hero img{
-max-width:240px;
-}
-
-.btn{
-padding:12px 24px;
-font-size:14px;
-}
-
-.stats-grid{
-grid-template-columns:1fr 1fr;
-gap:15px;
-}
-
-.counter{
-font-size:28px;
-}
-
-.stat-item{
-padding:20px;
-}
-
-.section{
-padding:60px 20px;
-}
-
-.section-title{
-font-size:24px;
-}
-
-.gallery-container img{
-height:220px;
-}
-
-.testimonials{
-grid-template-columns:1fr;
-}
-
-.cards{
-grid-template-columns:1fr;
-}
-
-.achievement-image{
-height:200px;
-}
-  nav{
-display:flex;
-justify-content:center;
-align-items:center;
-flex-wrap:wrap;
-}
-
-.logo-link{
-justify-content:center;
-}
-
-}
-</style>
-<link rel="me" href="https://www.blogger.com/profile/06236339533173646059" />
-<meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109'/>
-<meta name='google-adsense-platform-domain' content='blogspot.com'/>
+    #checkoutOverlay {
+      position: fixed;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      background: #ffffff;
+      z-index: 100000;
+      overflow-y: auto;
+      transform: translateY(100%);
+      opacity: 0;
+      transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.35s ease;
+      color: var(--selar-text);
+    }
+    #checkoutOverlay.active {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    .checkout-topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 18px 24px;
+      border-bottom: 1px solid #eee;
+      position: sticky;
+      top: 0;
+      background: #fff;
+      z-index: 2;
+    }
+    .checkout-close {
+      background: #f4f2f8;
+      border: none;
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      color: #555;
+      font-size: 1.1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+    .checkout-close:hover { background: #e8e3f5; color: var(--selar-purple); }
+    .checkout-wrap {
+      max-width: 480px;
+      margin: 0 auto;
+      padding: 40px 24px 60px;
+    }
+    .logo-placeholder {
+      width: 88px;
+      height: 88px;
+      border: 2px dashed #cfc3ea;
+      border-radius: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 18px;
+      color: #b3a3d6;
+      font-size: 0.7rem;
+      text-align: center;
+      line-height: 1.2;
+      background: var(--selar-purple-light);
+    }
+    .checkout-brand-name {
+      text-align: center;
+      font-weight: 700;
+      font-size: 1.3rem;
+      color: var(--selar-text);
+      margin-bottom: 2px;
+    }
+    .checkout-subtitle {
+      text-align: center;
+      color: #7a7a8c;
+      font-size: 0.9rem;
+      margin-bottom: 28px;
+    }
+    .checkout-amount-box {
+      background: var(--selar-purple-light);
+      border-radius: 16px;
+      padding: 22px;
+      text-align: center;
+      margin-bottom: 24px;
+    }
+    .checkout-amount-box .label {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: #8a7bb0;
+      margin-bottom: 4px;
+    }
+    .checkout-amount-box .amount {
+      font-size: 2.4rem;
+      font-weight: 800;
+      color: var(--selar-purple);
+    }
+    .selar-detail-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 14px 0;
+      border-bottom: 1px solid #eee;
+    }
+    .selar-detail-row:last-child { border-bottom: none; }
+    .selar-detail-row .label {
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: #9a94ad;
+    }
+    .selar-detail-row .value {
+      font-weight: 700;
+      font-size: 1rem;
+      color: var(--selar-text);
+    }
+    .checkout-note {
+      font-size: 0.82rem;
+      color: #8a7bb0;
+      background: var(--selar-purple-light);
+      border-radius: 12px;
+      padding: 12px 16px;
+      margin: 22px 0;
+    }
+    /* Bank payment details card */
+    .bank-details-card {
+      background: rgba(0, 200, 83, 0.06);
+      border: 1px solid rgba(0, 200, 83, 0.3);
+      border-radius: 24px;
+      padding: 1.75rem;
+      margin-top: 1.5rem;
+    }
+    .bank-details-card .detail-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.75rem 0;
+      border-bottom: 1px dashed rgba(255,255,255,0.1);
+    }
+    .bank-details-card .detail-row:last-child { border-bottom: none; }
+    .bank-details-card .detail-label {
+      font-size: 0.8rem;
+      color: #9aa5b8;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .bank-details-card .detail-value {
+      font-weight: 700;
+      font-size: 1.05rem;
+      color: #fff;
+    }
+    .copy-btn {
+      background: rgba(10,132,255,0.15);
+      border: 1px solid rgba(10,132,255,0.4);
+      color: #0A84FF;
+      border-radius: 10px;
+      padding: 3px 10px;
+      font-size: 0.75rem;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+    .copy-btn:hover { background: rgba(10,132,255,0.3); }
+    .copy-btn.copied { background: rgba(0,200,83,0.25); border-color: #00C853; color: #00C853; }
+  </style>
 </head>
 <body>
 
-<nav>
-<div class="logo-link">
-<div class="logo-box">
-<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhDthKpEBnR9OZaWqZrGczVjG8Guwl_1vo9C5f9ll7QH4zKwXu5IYvQPJPFWLdHM7L0AND5QzZi8KXHAWXZwDctQgN4dZVX0MFtBR74q4G2C_Szum_dy9-A5lzX83bqRIEEEnu23ZXcRUmgbwivInMbPgWxoARHo9y4XSL-QgIw4rvLGDLxbQ936jyDGxzo/s640/WhatsApp%20Image%202026-06-13%20at%207.52.20%20AM.jpeg">
-</div>
+  <!-- STICKY COUNTDOWN TIMER BAR (30 minutes) - FIXED AT TOP -->
+  <div class="countdown-bar">
+    <div class="container">
+      <span>⏳ <strong>Limited Time Offer!</strong> Enroll Now &nbsp;—&nbsp; </span>
+      <span class="countdown-timer" id="countdownDisplay">30:00</span>
+      <span class="ms-2">minutes remaining</span>
+    </div>
+  </div>
 
-<div class="logo-box">
-<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEioqUONWjVO9E-yE3E5549MJWkGTpux9NYrTux1YimQC4sRfQ-nBfub5osUtOworkrvPpsCDeFqiAQNpdE6vpmaRfsDGBZ5U5aKs16WqtcAL_kvLeLJWjE7FOw5zJJI3Cf0KgktHw3NCf9oG4sBxTdqJnnQQtKSqHKRRd9Fu6i50cD060JZ88wJ_bFwu59b/s1254/ChatGPT%20Image%20Jun%2013,%202026,%2009_40_16%20AM.png">
-</div>
+  <!-- NAVIGATION (now below countdown) -->
+  <nav class="navbar navbar-expand-lg nav-sticky py-3">
+    <div class="container">
+      <a class="navbar-brand text-white fw-bold" href="#"><i class="fas fa-graduation-cap text-primary-custom me-2"></i>PROMISETECH</a>
+      <button class="navbar-toggler border-0 text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto gap-2 align-items-center">
+          <li class="nav-item"><a class="nav-link text-white-50" href="#courses">Courses</a></li>
+          <li class="nav-item"><a class="nav-link text-white-50" href="#results">Results</a></li>
+          <li class="nav-item"><a class="nav-link text-white-50" href="#video">Video Proof</a></li>
+          <li class="nav-item"><a class="nav-link text-white-50" href="#testimonials">Testimonials</a></li>
+          <li class="nav-item"><a class="btn btn-sm gradient-primary btn-glow px-4 rounded-pill text-white" href="#" onclick="ttq.track('Lead'); openCheckout(); return false;"><i class="fas fa-rocket me-1"></i>Enroll</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-<div class="logo-box">
-<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhaYjdvY1lU5tDOt5iDnijmN8Mf8Gc2Sw6G2f4nLPPy8b7RdyAOMWKsYQOGVd7PtWpkl-E7nkShODNnr3SJCHrbX-7b-ZXtwHh0TIUYBLFVIdvBl3w9m6A_CYmeMTiB-t_1CNVLnLc6ertigfc2MkqIqbcfLeGYLkaZLPoliu8-wIHemaNxJIJIfg7JCU3l/s1254/ChatGPT%20Image%20Jun%2013,%202026,%2009_46_41%20AM.png">
-</div>
-</div>
-</nav>
-<section class="hero">
-<div class="hero-grid">
-<div>
-<h3>NSIT UBIUM LOCAL GOVERNMENT PORTAL 2026</h3>
-<h1 class="hero-title">NSIT UBIUM LOCAL GOVERNMENT BURSARY 2026</h1>
-<p>Empowering students through educational support, innovation and community development.</p><br>
-<a href=" https://www.nsitubiumbursaryportal.com.ng/" class="btn">APPLY NOW</a>
-</div>
-<div>
-<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj_Is_Kc9hxVi5AmfFJjdjGczZORZuuUmVdpoKpcO4ysOLXUyNpTBuzN1OFlJyivOgW9Dlt6vY5bnhCBUZkbIrGNq7fyouy7L5Nid4fQ5qWV3xmvFjA6_vsEwFrH05aFIP9jXZl5C-W65RvpVGWAJznpBBoVkJITA3Gnw_BY0AlJZuz4419PVLFsGMEobXB/s900/WhatsApp%20Image%202026-06-12%20at%206.55.01%20PM.jpeg" alt="Chairman">
-</div>
-</div>
-</section>
+  <!-- HERO -->
+  <section class="hero-section">
+    <div class="floating-ai" style="top:10%; right:5%;"><i class="fas fa-microchip"></i></div>
+    <div class="floating-ai" style="bottom:15%; left:3%; font-size:4rem;"><i class="fas fa-robot"></i></div>
+    <div class="container pt-5 mt-4">
+      <div class="row g-5 align-items-center">
+        <div class="col-lg-7">
+          <h1 class="display-4 fw-bold lh-1 mb-4">Become a Certified Affiliate Marketer & AI Digital Product Creator</h1>
+          <p class="lead text-white-50 mb-4">Learn how to create digital products with free AI tools, build professional websites, create high-converting landing pages, run Facebook Ads, and sell online—even if you're starting from scratch.</p>
+          <div class="d-flex flex-wrap gap-3 mb-4">
+            <span class="trust-badge"><i class="fas fa-check-circle text-secondary-custom me-2"></i>Beginner Friendly</span>
+            <span class="trust-badge"><i class="fas fa-infinity text-secondary-custom me-2"></i>Lifetime Access</span>
+            <span class="trust-badge"><i class="fas fa-mobile-alt text-secondary-custom me-2"></i>Learn From Phone or Laptop</span>
+            <span class="trust-badge"><i class="fas fa-tools text-secondary-custom me-2"></i>Practical Training</span>
+          </div>
+          <div class="d-flex flex-wrap gap-3">
+            <a href="#" class="btn gradient-primary btn-glow px-5 py-3 rounded-pill fw-semibold" onclick="ttq.track('Lead'); openCheckout(); return false;"><i class="fas fa-user-graduate me-2"></i>Join Now</a>
+            <a href="https://t.me/updates_9ja" target="_blank" class="btn btn-outline-light px-5 py-3 rounded-pill fw-semibold border-2" onclick="ttq.track('Lead');"><i class="fab fa-telegram me-2"></i>Join Our Telegram channel</a>
+          </div>
+        </div>
+        <div class="col-lg-5 d-none d-lg-block text-center">
+          <div class="glass p-4 position-relative">
+            <i class="fas fa-laptop-code" style="font-size: 8rem; color: #0A84FF; opacity: 0.5;"></i>
+            <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center">
+              <span class="badge bg-primary bg-opacity-25 p-3 rounded-pill"><i class="fas fa-sparkles me-1"></i> AI-Powered</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<section class="section stats">
-<div class="stats-grid">
-<div class="stat-item"><div class="counter" data-target="5000">0</div><p>Students Applied</p></div>
-<div class="stat-item"><div class="counter" data-target="3000">0</div><p>Students Supported</p></div>
-<div class="stat-item"><div class="counter" data-target="8000">0</div><p>Portal Visitors</p></div>
-<div class="stat-item"><div class="counter" data-target="250">0</div><p>ICT Computers</p></div>
-</div>
-</section>
+  <!-- YOUTUBE VIDEO PROOF -->
+  <section id="video" class="py-5">
+    <div class="container">
+      <div class="glass p-4 p-md-5">
+        <h2 class="section-title mb-3">🔥 Live Video Proof: How I Made Profit selling Digital product online</h2>
+        <p class="text-white-50 mb-4">Watch this real video testimonial where I break down exactly how I generated lots of sales using the strategies taught inside PromiseTech Academy.</p>
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/HQERmcNkdms?si=DUxqseT1g659pMmV" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<section id="achievements" class="section">
-<h2 class="section-title">Achievements</h2>
-<div class="cards">
-<div class="achievement-card"><img class="achievement-image" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg7yTXC-bgygPftKtehNhoQZuWZHc0bfxqvu-2FKlJOBY0akWZtz_RP1WAAVQyaK74xGCXnPGW9BpJpQ-Sl-yOpEJ6g7VwXirNgN8qnLBsMx84gsHExGN1mq6LozI0sVSo5GuO2Ei_4-U_BMTX3Bij26U8OQqm8MYesZO3Rw6sJYdKWQe-IYBHJcEvHJLcR/s1280/WhatsApp%20Image%202026-06-12%20at%206.56.00%20PM%20(1).jpeg"><div class="achievement-content">Educational grants to students.</div></div>
-<div class="achievement-card"><img class="achievement-image" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhYi86XWIg7mpxE4T7D2pMiyk03FTdmw_KkR1M-xvXr9muAQrkF5PLDvlDkvBHHv4VJ8i8Iy3rwHZYvZlXEf4iF-l1y6RVi5CKU2Etyyi0dCJnlpuWnPc4i8OFhnGp3lu4IaTRsf7hncfRl8nJNwvo3gtT4z2ah6R2tdYl_jyCas6vPTccbDwqwyu4_T7Lm/s1080/WhatsApp%20Image%202026-06-12%20at%206.57.30%20PM%20(1).jpeg"><div class="achievement-content">100million Education Trust-fund.</div></div>
-  <div class="achievement-card">
-<img class="achievement-image" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj9Qa4zlQYJUekE7CQM2W6erGweE2lMoMdWK8czpkgW_Cd7kUIUhkrnL9c-h9DUrxZjO-9FxkqIcvBXrz3L7XJjkH0rupsUHKZ2QKyEpErUUwQUkWZxu3sk-kILc8UCLqg1CCZiSufQHJRpeiJWahXdQSi3VNY3can_6NgfxN8PJ6QjKRLdJxXJrimy7ffr/s720/WhatsApp%20Image%202026-06-12%20at%206.55.59%20PM%20(1).jpeg">
-<div class="achievement-content">
-ICT Centre with 250 computers.
-</div>
-</div>
+  <!-- STUDENT TESTIMONIAL PICTURE SPOTS (4) -->
+  <section id="student-pics" class="py-5">
+    <div class="container">
+      <h2 class="section-title mb-5">Student Testimonial Gallery <span class="text-secondary-custom">📸</span></h2>
+      <div class="row g-4">
+        <div class="col-md-3 col-6"><div class="testimonial-pic-card"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQsVd1937yyXHSLC1TTLNxdmDmSWL95l0Ho6lK_frrFwZsc7SN27UMXPs2XHgVx0WLBH6ZWM6e9u6bx4XQXk8BVlcDsHgelAx33SAluss-TpFZwfbvToLcEK5AYPPnvE5TzPGPzNDOEJUgcPnry1Z6ucAcAHQu5UMjBOswfYZit3dsJ72vWq6vtaSCeuY/s5472/elizeu-dias-2EGNqazbAMk-unsplash.jpg" alt="student testimonial 1"><div class="card-body"><p class="small text-white-50 mb-0"><i class="fas fa-quote-left text-primary-custom me-1"></i> "Life-changing training!"</p></div></div></div>
+        <div class="col-md-3 col-6"><div class="testimonial-pic-card"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjV-JLBpe9GDx4ZnhV1Cmmg-MVsSYTTSvHPkCW38QpofgPppEHB5aimrioxRKb2NuJLxknS6K9_8yz33PSVBa_3Q5ywZLeiCifWRdF3Nbms73tnsQKPXQ3eX_5696Ar25idKzHvCKn5qY3LzWE8-CebuIsOXERokuGMJ4-r-v8iBAlKilImsnAcEOKckVA/s5616/gift-habeshaw-B1ZnssAW8CI-unsplash.jpg" alt="student testimonial 2"><div class="card-body"><p class="small text-white-50 mb-0"><i class="fas fa-quote-left text-primary-custom me-1"></i> "I launched my own agency."</p></div></div></div>
+        <div class="col-md-3 col-6"><div class="testimonial-pic-card"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgchpurCsroTU-F0qGogLQHdNMDvOarXMIj8dTcuugelowzJCvOwGFuYZRHi-hMpthT3bEzJ1XspVUGsnbIUomDb3HnQZBJsm6ylYY_fjP23j94HJ6OCdHBM2JGWbIEbX2mEbpVoYZIC3zN-Tiw6XDJLFnLZSPTPmCDfx_sBxEjjbjxJpCGUBakcjOKR6o/s5760/gift-habeshaw-KBv5dEN3QtY-unsplash.jpg" alt="student testimonial 3"><div class="card-body"><p class="small text-white-50 mb-0"><i class="fas fa-quote-left text-primary-custom me-1"></i> "Best investment in my career."</p></div></div></div>
+        <div class="col-md-3 col-6"><div class="testimonial-pic-card"><img src="https://randomuser.me/api/portraits/women/33.jpg" alt="student testimonial 4"><div class="card-body"><p class="small text-white-50 mb-0"><i class="fas fa-quote-left text-primary-custom me-1"></i> "From zero to sales in weeks."</p></div></div></div>
+      </div>
+    </div>
+  </section>
 
-<div class="achievement-card">
-<img class="achievement-image" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiJtEPjhfW5nkk_Jy8i3lVovU76t-itL7WW8UNaZWBeG7Ws9TM5pUe1VCF-M6HcwjzVfa1BUtMDcEY3o_yYo0B08g0aQSDc_eXQkIlWK4J9cBkmTk_K98RWN3N7QNYMhA0ve98HnoSjN52mWq0hWI6pS8JHjZ69ymFOfV4K77BxsxdsS2p6wEv5jnjonUFm/s1280/WhatsApp%20Image%202026-06-12%20at%208.24.40%20PM.jpeg">
-<div class="achievement-content">
-Construction of Urua Ntakrok model market comprising 3 blocks of lock up stores that are made up of 36 stores, 27 open partitioned stalls housing 378 stalls, 6 blocks of open shades, toilets, generator house, Abbattior, water tank & market offices.
-</div>
-</div>
+  <!-- ADMISSION NOTICE -->
+  <section class="py-5">
+    <div class="container">
+      <div class="glass p-4 p-md-5 row g-4 align-items-center">
+        <div class="col-md-8">
+          <h3 class="fw-bold"><i class="fas fa-graduation-cap text-primary-custom me-2"></i>🎓 2026 Student Registration Is Now Open</h3>
+          <p class="text-white-50">Applications are currently open for new students joining PROMISETECH ACADEMY. To activate your student account and gain access to the learning portal, an <strong class="text-secondary-custom">Activation Fee</strong> is required. After successful activation, you'll receive your student dashboard, learning materials (video lessons + downloadable PDF guides), and course access instructions.</p>
+          <p class="text-white-50 small mt-2"><i class="fas fa-heart text-secondary-custom me-2"></i>These skills changed my life, and I want as many people as possible to have access to them — that's why the activation fee is kept accessible, so cost is never the reason someone gets left behind.</p>
+        </div>
+        <div class="col-md-4 text-md-end">
+          <span class="badge bg-success bg-opacity-25 text-success p-3 fs-6 rounded-pill"><i class="fas fa-check-circle me-1"></i> Admission Status: OPEN</span>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<div class="achievement-card">
-<img class="achievement-image" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5S5B__lW2XKF6l3nM0VGtV9MFcH2LepaEyHw7NKg_qthvDhERxOC5NCd2BAgGEjPgCEGOPlktUuknOR6jQrd6VvwYL-C6EoMNSbTrz6XuHYtw4tivD6tEOAIrvXE0r58YRyLZPrVDPOZ2Xw0GaE0dGQE1Yzqwu39tFHAbANn3u9o5ZORxqvJ2p1ti56K7/s720/WhatsApp%20Image%202026-06-12%20at%207.02.49%20PM.jpeg">
-<div class="achievement-content">
-Free medical outreach programs.
-</div>
-</div>
+  <!-- WHAT YOU WILL LEARN -->
+  <section id="courses" class="py-5">
+    <div class="container">
+      <h2 class="section-title mb-5">What You Will Learn</h2>
+      <div class="row g-4">
+        <div class="col-6 col-md-4 col-lg-3"><div class="icon-card text-center"><i class="fas fa-bullseye mb-2"></i><h6 class="fw-semibold">Module 1</h6><p class="small text-white-50">Affiliate Marketing From Scratch</p></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="icon-card text-center"><i class="fas fa-robot mb-2"></i><h6 class="fw-semibold">Module 2</h6><p class="small text-white-50">AI Digital Product Creation</p></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="icon-card text-center"><i class="fas fa-globe mb-2"></i><h6 class="fw-semibold">Module 3</h6><p class="small text-white-50">Website Creation</p></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="icon-card text-center"><i class="fas fa-paint-brush mb-2"></i><h6 class="fw-semibold">Module 4</h6><p class="small text-white-50">Landing Page Design</p></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="icon-card text-center"><i class="fab fa-facebook mb-2"></i><h6 class="fw-semibold">Module 5</h6><p class="small text-white-50">Facebook Advertising</p></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="icon-card text-center"><i class="fab fa-tiktok mb-2"></i><h6 class="fw-semibold">Module 6</h6><p class="small text-white-50">TikTok Advertising</p></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="icon-card text-center"><i class="fas fa-funnel-dollar mb-2"></i><h6 class="fw-semibold">Module 7</h6><p class="small text-white-50">Sales Funnel Creation</p></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="icon-card text-center"><i class="fas fa-video mb-2"></i><h6 class="fw-semibold">Module 8</h6><p class="small text-white-50">AI Video Creation</p></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="icon-card text-center"><i class="fas fa-chart-line mb-2"></i><h6 class="fw-semibold">Module 9</h6><p class="small text-white-50">Campaign Tracking</p></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="icon-card text-center"><i class="fas fa-rocket mb-2"></i><h6 class="fw-semibold">Module 10</h6><p class="small text-white-50">Scaling Your Online Business</p></div></div>
+      </div>
+      <div class="glass p-3 p-md-4 mt-4 d-flex flex-wrap align-items-center gap-3 justify-content-center">
+        <span class="trust-badge"><i class="fas fa-video text-secondary-custom me-2"></i>Full Video Lessons</span>
+        <span class="trust-badge"><i class="fas fa-file-pdf text-secondary-custom me-2"></i>Downloadable PDF Guides</span>
+      </div>
+    </div>
+  </section>
 
-<div class="achievement-card">
-<img class="achievement-image" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiBhoKzRBlmcun9encc9jSmmLgvViHSCgx19iY0g3bvTghtMpE9sqffnzPUDoWzBvecMH02NF-piNSApPmG2Poou8cLUYXK-XXv5d1c2JesgxJPoSfqZ4MpEEy5IGtXaQycIWqHX032GRHNcLOUej60p0JlvfvNTf8Np0fjH8kbB_VAJMvml9wEdIgI6YaD/s1032/WhatsApp%20Image%202026-06-12%20at%207.01.28%20PM.jpeg"><div class="achievement-content">
-<div class="achievement-content">
-Distribution of Educational Materials to 38 primary schools.
-</div>
-</div>
-  
-<section id="gallery" class="section">
-<h2 class="section-title">Project Gallery</h2>
+  <!-- WHY STUDY WITH US + REGISTRATION PROCESS -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-md-6">
+          <h2 class="section-title mb-4">Why Study With Us</h2>
+          <div class="row g-3">
+            <div class="col-6"><div class="icon-card p-3"><i class="fas fa-chalkboard-teacher"></i><p class="fw-semibold mt-2 mb-0">Expert-Led Training</p></div></div>
+            <div class="col-6"><div class="icon-card p-3"><i class="fas fa-infinity"></i><p class="fw-semibold mt-2 mb-0">Lifetime Access</p></div></div>
+            <div class="col-6"><div class="icon-card p-3"><i class="fas fa-smile"></i><p class="fw-semibold mt-2 mb-0">Beginner Friendly</p></div></div>
+            <div class="col-6"><div class="icon-card p-3"><i class="fas fa-project-diagram"></i><p class="fw-semibold mt-2 mb-0">Real Projects</p></div></div>
+            <div class="col-6"><div class="icon-card p-3"><i class="fas fa-mobile-alt"></i><p class="fw-semibold mt-2 mb-0">Mobile Learning</p></div></div>
+            <div class="col-6"><div class="icon-card p-3"><i class="fas fa-certificate"></i><p class="fw-semibold mt-2 mb-0">Certificate</p></div></div>
+            <div class="col-6"><div class="icon-card p-3"><i class="fas fa-users"></i><p class="fw-semibold mt-2 mb-0">Private Community</p></div></div>
+            <div class="col-6"><div class="icon-card p-3"><i class="fas fa-sync-alt"></i><p class="fw-semibold mt-2 mb-0">Free Updates</p></div></div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <h2 class="section-title mb-4">Student Registration Process</h2>
+          <div class="timeline-step"><span class="step-number">1</span><h6>Complete Registration</h6></div>
+          <div class="timeline-step"><span class="step-number">2</span><h6>Activate Student Account</h6><span class="badge bg-secondary-custom bg-opacity-25 text-secondary-custom px-3 py-2 rounded-pill">Activation Fee</span></div>
+          <div class="timeline-step"><span class="step-number">3</span><h6>Send Payment Proof on WhatsApp</h6></div>
+          <div class="timeline-step"><span class="step-number">4</span><h6>Receive Login Details & Access Dashboard</h6></div>
+          <div class="timeline-step"><span class="step-number">5</span><h6>Start Learning (Videos + PDFs)</h6></div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<div class="gallery-slider">
+  <!-- COURSE BENEFITS -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="section-title mb-5">Course Benefits</h2>
+      <div class="row g-4">
+        <div class="col-6 col-lg-3"><div class="icon-card text-center"><i class="fas fa-map-pin"></i><p class="fw-semibold mt-2">Learn From Anywhere</p></div></div>
+        <div class="col-6 col-lg-3"><div class="icon-card text-center"><i class="fas fa-code"></i><p class="fw-semibold mt-2">No Coding Required</p></div></div>
+        <div class="col-6 col-lg-3"><div class="icon-card text-center"><i class="fas fa-brain"></i><p class="fw-semibold mt-2">AI Tools Included</p></div></div>
+        <div class="col-6 col-lg-3"><div class="icon-card text-center"><i class="fab fa-facebook"></i><p class="fw-semibold mt-2">Facebook Ads Strategy</p></div></div>
+        <div class="col-6 col-lg-3"><div class="icon-card text-center"><i class="fas fa-file-code"></i><p class="fw-semibold mt-2">Website Templates</p></div></div>
+        <div class="col-6 col-lg-3"><div class="icon-card text-center"><i class="fas fa-file-alt"></i><p class="fw-semibold mt-2">Landing Page Templates</p></div></div>
+        <div class="col-6 col-lg-3"><div class="icon-card text-center"><i class="fas fa-bullhorn"></i><p class="fw-semibold mt-2">Marketing Resources</p></div></div>
+        <div class="col-6 col-lg-3"><div class="icon-card text-center"><i class="fas fa-sync-alt"></i><p class="fw-semibold mt-2">Lifetime Updates</p></div></div>
+      </div>
+    </div>
+  </section>
 
-<div class="gallery-container">
+  <!-- STUDENT REAL RESULT SCREENSHOTS (4) -->
+  <section id="results" class="py-5">
+    <div class="container">
+      <h2 class="section-title mb-5">Student Real Results <span class="text-secondary-custom">📈</span></h2>
+      <div class="row g-4">
+        <div class="col-md-3 col-6"><div class="result-card"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg_N0XYTfTWRaPWX1WUoJvKjUc0maY50OQmMYnYpOssu-zPiu4N_DixVwZFj03kg1C6J5ld7BEHMgcBpmExPNncramycBY7KRY8XV2keEJuo83oEiCuHsAX_N0YTQBDQ-gOxsVbMkZ4ayl-Z2qRMK8OjOW3X8QvpV7cmxvDDuhtx48myXrq613lz0b2ioA/s1200/john-ibukun1n-a-1749205253-jpg-selar.com-20250606102053.jpg" alt="student result 1"><div class="card-body"><p class="small text-white-50 mb-0"><i class="fas fa-trophy text-secondary-custom me-1"></i> Affiliate commission</p></div></div></div>
+        <div class="col-md-3 col-6"><div class="result-card"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhTejEzn7R6Ne2v-fk_2O6Oj69bx7W6LHRvM-J7IH-1iPXGTHFNJel1y2l7dGE0kdHS-0ljkp9-UWXkY6zYY00ldRol0468J9SCfuKZ7l5u7K_eaBcndP4QZIN8M1MUGhK5MU-rs0RM4DgGcvChh8bIbc_WZgCJtrgaHZZNL12HM1kJAXlCk0098tSGBno/s1280/WhatsApp%20Image%202026-08-06%20at%2011.32.42%20PM.jpeg" alt="student result 2"><div class="card-body"><p class="small text-white-50 mb-0"><i class="fas fa-chart-line text-secondary-custom me-1"></i> Sales dashboard</p></div></div></div>
+        <div class="col-md-3 col-6"><div class="result-card"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj8N1wRKKdPsp_1P6PE-S5y1a1pxtLCHBbLJ_tWvfdMY2YBuA6aFT8PoWnI7vcE9aZrqztZSkyG6n_7hqKy-AUbH1m7okl3c2IpYG3KDaBShaMH7uiUMY8ErcvYOOpVINvWsRjjx-MPZjkXtwcxFb1xnzod2z2JVqss-wWalMM1-btuUa4JfqP5Zrm5wKs/s1184/WhatsApp%20Image%202026-08-06%20at%2011.32.44%20PM.jpeg" alt="student result 3"><div class="card-body"><p class="small text-white-50 mb-0"><i class="fas fa-rocket text-secondary-custom me-1"></i> Digital product sales</p></div></div></div>
+        <div class="col-md-3 col-6"><div class="result-card"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjAOb6A0bBNtav-PTNCalRxEq0YN9X9gi-1SwGJfYG2ppz4D3bdRETPpWZQTkIhWXIIlDqKiJ-syZ_J3r6spXMxDYOdtoOdCpCtZXZW6g2WoFbrv3jvNASNROfUqrmrsWmPR1n8Pei4rvhoBxpZNYVhYAbzx5qFXEkffvPYiGEnRjZsxbfXNX7-u9QO9Bc/s1145/WhatsApp%20Image%202026-08-06%20at%2011.32.52%20PM.jpeg" alt="student result 4"><div class="card-body"><p class="small text-white-50 mb-0"><i class="fas fa-dollar-sign text-secondary-custom me-1"></i> Revenue milestone</p></div></div></div>
+      </div>
+    </div>
+  </section>
 
-<div class="gallery-slide">
-<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhX-Vrp5jJST7Hijo5RayiHyPQHj7LtrTCkOzWxmCf87Pomm73kczVsLJoyMMmQ18vgDA0A1BQ2ewywcV9BF8jloMaXCUJPSzBV5bVi2k2HJIEAnAsolPcVIECGAyEVfV0oX9SIAyuKWjBfdyQRN0JULq84WG8ie3abFR5s8oTc0SVxUq0H6zAfYq4LQNEq/s980/WhatsApp%20Image%202026-06-12%20at%206.56.43%20PM%20(2).jpeg">
-</div>
+  <!-- TESTIMONIALS -->
+  <section id="testimonials" class="py-5">
+    <div class="container">
+      <h2 class="section-title mb-5">What Our Foreign Students Says</h2>
+      <div class="row g-4">
+        <div class="col-md-4"><div class="testimonial-card"><div class="d-flex align-items-center gap-3 mb-3"><img src="https://randomuser.me/api/portraits/men/32.jpg" alt="student"><div><h6 class="mb-0">Chidi O.</h6><small class="text-white-50">Digital Marketer</small></div></div><p class="small text-white-50">"Practical training that actually works. I built my first landing page in 2 days. The AI tools module was a game changer."</p></div></div>
+        <div class="col-md-4"><div class="testimonial-card"><div class="d-flex align-items-center gap-3 mb-3"><img src="https://randomuser.me/api/portraits/women/44.jpg" alt="student"><div><h6 class="mb-0">Amina K.</h6><small class="text-white-50">Content Creator</small></div></div><p class="small text-white-50">"The structured lessons helped me understand sales funnels and Facebook ads. I feel confident to start my own agency."</p></div></div>
+        <div class="col-md-4"><div class="testimonial-card"><div class="d-flex align-items-center gap-3 mb-3"><img src="https://randomuser.me/api/portraits/men/67.jpg" alt="student"><div><h6 class="mb-0">Tunde A.</h6><small class="text-white-50">Entrepreneur</small></div></div><p class="small text-white-50">"The community and lifetime access are amazing. I've learned practical skills without any coding background."</p></div></div>
+      </div>
+    </div>
+  </section>
 
-<div class="gallery-slide">
-<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjaJm3hTeIUJfU-lO6XktnI5VUTrQc9YNvrNOkFaBuCg8ue5zxg_AolxzG3CaGhfoj6aDjM0QNkMnUBw2pJ3Woj1R9T3L34ML9DUtlXjjF9e-mPfbBH48tcD159vwtDUd7eBwOio03EsP2RHGPxOXP2kV2t5e8Q-Uk4A6YAmfOyZR5InZr1tc9oq0tMH9YD/s1032/WhatsApp%20Image%202026-06-12%20at%206.56.43%20PM.jpeg">
-</div>
+  <!-- FAQ -->
+  <section id="faq" class="py-5">
+    <div class="container">
+      <h2 class="section-title mb-4">Frequently Asked Questions</h2>
+      <div class="faq-item"><h6><i class="fas fa-question-circle text-primary-custom me-2"></i>What is PROMISETECH ACADEMY?</h6><p class="small text-white-50">An online academy that teaches affiliate marketing, AI product creation, and digital business skills.</p></div>
+      <div class="faq-item"><h6><i class="fas fa-user-plus text-primary-custom me-2"></i>Who can enroll?</h6><p class="small text-white-50">Anyone interested in digital marketing, from beginners to intermediate learners.</p></div>
+      <div class="faq-item"><h6><i class="fas fa-question text-primary-custom me-2"></i>Do I need experience?</h6><p class="small text-white-50">No, the training is beginner-friendly and covers everything from scratch.</p></div>
+      <div class="faq-item"><h6><i class="fas fa-file-alt text-primary-custom me-2"></i>What format is the course in?</h6><p class="small text-white-50">The course includes both video lessons and downloadable PDF guides, so you can watch, read, and revisit the material anytime.</p></div>
+      <div class="faq-item"><h6><i class="fas fa-key text-primary-custom me-2"></i>How do I activate my account?</h6><p class="small text-white-50">Pay the activation fee to the account details provided, then send your payment confirmation via WhatsApp to unlock your dashboard and materials.</p></div>
+      <div class="faq-item"><h6><i class="fas fa-clock text-primary-custom me-2"></i>When do I receive access?</h6><p class="small text-white-50">Immediately after your payment is confirmed on WhatsApp, you'll get your login details.</p></div>
+    </div>
+  </section>
 
-<div class="gallery-slide">
-<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg_oAHYwFcJlqySN0EsAzxXZXYq6B3vGu5QWzJ-JHNTM_Z3tXRRK7iQtWjqIC1DOI_mNDgh4z9z-a_EjbKBfPq8791BvoffAL-Oqf0EAHoeblb58tAUWwMNYF3f2GHWzltWQGRv6n3xv5rOL0HjGKVe10y3U7fKNTEJUnzZPKJW4WPnd6x0eC6p2PLKokJl/s1032/WhatsApp%20Image%202026-06-12%20at%206.56.43%20PM%20(1).jpeg">
-</div>
+  <!-- CALL TO ACTION + PAYMENT DETAILS -->
+  <section id="cta" class="py-5">
+    <div class="container">
+      <div class="text-center">
+        <h2 class="fw-bold display-6">Ready To Become A Digital Marketing Professional?</h2>
+        <p class="text-white-50 mb-2">Join hundreds of students learning practical digital marketing skills with PROMISETECH ACADEMY.</p>
+        <p class="text-white-50 small mb-5"><i class="fas fa-heart text-secondary-custom me-2"></i>I've personally benefited so much from these skills that I kept the activation fee accessible — so everyone who's serious can afford to start.</p>
+        <div class="pricing-card">
+          <h5 class="text-uppercase text-secondary-custom">Student Account Activation</h5>
+          <div class="price">Activation Fee</div>
+          <ul class="list-unstyled mt-3 text-start">
+            <li><i class="fas fa-check text-secondary-custom me-2"></i>Lifetime Course Access</li>
+            <li><i class="fas fa-video text-secondary-custom me-2"></i>Full Video Lessons</li>
+            <li><i class="fas fa-file-pdf text-secondary-custom me-2"></i>Downloadable PDF Guides</li>
+            <li><i class="fas fa-check text-secondary-custom me-2"></i>Student Dashboard</li>
+            <li><i class="fas fa-check text-secondary-custom me-2"></i>Future Updates</li>
+          </ul>
 
-  <div class="gallery-slide">
-<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhmQ8fxfIz5aE-5rfo6P-ACgAWC3nKsO41R1GuYEONrask4xY4lHH8-oRwAtb0vqtLtjiGCFBfa6Lv8JowiVxiCaQbcZ0LNpZA5I8BWkm0XXOLQ1-A5EaW6r2z62Mx2VR9R6BcnruT7d68S5Z7MY9_Q5sgmHzhrGk6LdjSJ9rrklWssxPjLPFRe1u3mdsSv/s1016/WhatsApp%20Image%202026-06-12%20at%207.02.04%20PM.jpeg">
-</div>
+          <div class="d-grid gap-3 mt-4">
+            <a href="#" id="enrollTrigger" class="btn gradient-primary btn-glow py-3 rounded-pill fw-bold" onclick="ttq.track('Lead'); openCheckout(); return false;"><i class="fas fa-rocket me-2"></i> Join Now</a>
+          </div>
 
-  <div class="gallery-slide">
-<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYwVMeVAlh1WoR694jjXiJE6HjeY2dov8kXWF2S93dg_uPV0E9gDbpyYmxGWnnjPt0W7tTU4oKBjzRWIPGmEupoqGQp-TaYSq9CnikFKuT9fPLIm-mBXh_gncHcIHAMNCREfPqryc-0p_CNiSyVTKWllDR2h8VMw_722SyYVdjUeVzyMHvBDth_p50058/s1280/WhatsApp%20Image%202026-06-12%20at%208.12.39%20PM.jpeg">
-</div>
+          <div class="d-grid gap-3 mt-3">
+            <a href="https://t.me/updates_9ja" target="_blank" class="btn btn-outline-light py-3 rounded-pill" onclick="ttq.track('Lead');"><i class="fab fa-telegram me-2"></i> Contact Us on Telegram</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <div class="gallery-slide">
-<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjcxxk4c1DMf-gnnOkmug466DUkQcxyCnORyLYbxbtSiRlbdfiCk1i1jJSI7Ey-peS8mOV0gyGRCskI2CR4kEySPvCccceTo4aGvmBxoUHyC383HIcMZs_ctHCm0o3Jy3nf33yMCBCUx3eWiJ3oighkJUbOkR2yXK0QEd92r8jiSPZTxhOV4sn_gZAX7Qs/s1280/WhatsApp%20Image%202026-06-12%20at%208.12.38%20PM.jpeg">
-</div>
+  <!-- FOOTER -->
+  <footer class="py-5 border-top border-secondary border-opacity-10">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <h5 class="fw-bold"><i class="fas fa-graduation-cap text-primary-custom me-2"></i>PROMISETECH ACADEMY</h5>
+          <p class="text-white-50 small">Learn Today • Build Tomorrow • Grow Forever</p>
+        </div>
+        <div class="col-md-8 footer-links d-flex flex-wrap justify-content-md-end gap-3">
+          <a href="#">About</a> <a href="#">Courses</a> <a href="#">Admissions</a> <a href="#">Contact</a> <a href="#">Telegram</a> <a href="#">Privacy</a> <a href="#">Terms</a>
+        </div>
+      </div>
+      <div class="text-center text-white-50 small mt-4 pt-3 border-top border-secondary border-opacity-10">Copyright © 2026 PROMISETECH ACADEMY</div>
+    </div>
+  </footer>
 
-  <div class="gallery-slide">
-<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiZj23pDAXTHS4-TUiBDLokd3etMsAqUfYag1EEeVUgL4ZW2Yhe4cJsVCJ8UUdxBwX6pQhcGonxZ8VE_adFXbvaMwknUZBUKRq4Me6gUCJ6uFjKkQG3UfQ_R0HtP7rMN3c2IbIhDvpRIc1iU2rgYZ-vMivpABHLbfe29TgBf5-owSysewWzKYbYeVNMF0o/s1016/WhatsApp%20Image%202026-06-12%20at%208.12.38%20PM%20(1).jpeg">
-</div>
+  <!-- STICKY BOTTOM BAR -->
+  <div class="sticky-bottom-bar">
+    <div class="container">
+      <div class="row align-items-center justify-content-between">
+        <div class="col-6 col-md-4">
+          <span class="price-tag"><i class="fas fa-tag me-1"></i>Activation</span>
+          <span class="text-white-50 small d-none d-sm-inline">Fee</span>
+        </div>
+        <div class="col-6 col-md-8 text-end">
+          <a href="#" class="btn gradient-primary btn-glow" onclick="ttq.track('Lead'); openCheckout(); return false;">
+            <i class="fas fa-user-plus me-2"></i>Become Our Student Today
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
 
-  <div class="gallery-slide">
-<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6NEfUtQiBRHInCnoVOrlIK7kPqsG2oLKcejNOkIO-FmWpyMlelEffqPud6J226skk7pjxaP8_qpD0lQr8a2JMXDoiExsJ5vctq24oQmRS4nE1ztO_rU8tbgkg8gvl5XxLXDpp5coQx74ZokxU7hoxnegNu3onK0OBo5MMDx0GZN040ty2Fq5IeUvEbCY/s1280/WhatsApp%20Image%202026-06-12%20at%208.12.36%20PM%20(1).jpeg">
-</div>
+  <!-- SELAR-STYLE CHECKOUT OVERLAY -->
+  <div id="checkoutOverlay">
+    <div class="checkout-topbar">
+      <span class="fw-semibold" style="color:#1A1A2E;">Secure Checkout</span>
+      <button class="checkout-close" onclick="closeCheckout()"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="checkout-wrap">
 
-  <div class="gallery-slide">
-<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiXeaQsARDFvdgj-YRbyElr0WMHXmuzlIFYaJdWmCAP5CynfBfnRWOLwJPlfIX8GSZJG2Vsw0tyN6vBrA8VyppEj4LjozKmai0SIjg2rXwlEqYb3qZqhkdqSJRcQvQYfns6x4_ddl691W_A756sK9C140NboZZvHO4GT2F6oXZ_zjhYxieYXV5Lnm5FJwc/s715/WhatsApp%20Image%202026-06-12%20at%207.05.28%20PM.jpeg">
-</div>
+      <!-- LOGO SPACE: replace this div's content with <img src="your-logo.png" style="max-width:100%;max-height:100%;border-radius:18px;"> -->
+      <div class="logo-placeholder"> <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg0i4jO2uD8fYyTFP0UEVkU8Pt2ftCvU6GoPqREoLVCq_RF8VPUArTjmRDqR8rSbo1dTCpuq9aYLRr1HVcr29cWBFJKnJy_jYuMNCJBtDxR_jkyBrYdKx4ImoBHtofdBd6zsWz2Y6Jvmga_ldS0dw9zclpB4eoz-_JxYxL9t2uxlbV0FVtKr5SbZdE1wKI/s400/selar-logo-small.png" style="max-width:100%;max-height:100%;border-radius:18px;"> </div>
 
-  <div class="gallery-slide">
-<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjvOSmXUeGFL6j3QBoiCzt7ph8BnXbUGBGz2u4HswkmO8c53tp9cxd_81eq4l0bjSI36qTTW5aGUq1ilOgIXY1r1FDRN9-_1K_4fcr_YmH00AaKOKM86XzKKvrnIoCon7ZFqzGw99cR-z8cW-OqIi7ybJI_UmbEJVzjZqykHaRsok7LdujRIQ89gzY942k/s720/WhatsApp%20Image%202026-06-12%20at%207.02.49%20PM.jpeg">
-</div>
+      <div class="checkout-brand-name">PromiseTech Academy</div>
+      <div class="checkout-subtitle">Complete your registration</div>
 
-  <div class="gallery-slide">
-<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6NEfUtQiBRHInCnoVOrlIK7kPqsG2oLKcejNOkIO-FmWpyMlelEffqPud6J226skk7pjxaP8_qpD0lQr8a2JMXDoiExsJ5vctq24oQmRS4nE1ztO_rU8tbgkg8gvl5XxLXDpp5coQx74ZokxU7hoxnegNu3onK0OBo5MMDx0GZN040ty2Fq5IeUvEbCY/s1280/WhatsApp%20Image%202026-06-12%20at%208.12.36%20PM%20(1).jpeg">
-</div>
+      <div class="checkout-amount-box">
+        <div class="label">Amount to pay</div>
+        <div class="amount">Activation Fee</div>
+      </div>
 
-   <div class="gallery-slide">
-<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj1pzpBKjQigKqoq8ptT-G8b_7VhyphenhyphenkS5vV3qYhQK10HtbxkbdYop_CV5R_7fFUKqzPShJbDMWqlGGB6adLC_89C6Zb_Vmr1O5gQ5RHkdNbb1iKAuAbUn2cV3oHDEBxzndnR5JxlVVYlgBlh1D82_IcjmcD6HFTcogKRibSihu47E9nvpsx_I6gIrh_Mqy8/s1032/WhatsApp%20Image%202026-06-12%20at%207.01.28%20PM.jpeg">
-</div>
+      <div>
+        <div class="selar-detail-row">
+          <div>
+            <div class="label">Account Name</div>
+            <div class="value">Promise Tech Academy</div>
+          </div>
+          <button class="selar-btn-outline" onclick="copyDetail('Promise Tech Academy FLW', this)">Copy</button>
+        </div>
+        <div class="selar-detail-row">
+          <div>
+            <div class="label">Account Number</div>
+            <div class="value">9301236393</div>
+          </div>
+          <button class="selar-btn-outline" onclick="copyDetail('9301236393', this)">Copy</button>
+        </div>
+        <div class="selar-detail-row">
+          <div>
+            <div class="label">Bank Name</div>
+            <div class="value">Flutterwave MFB</div>
+          </div>
+          <button class="selar-btn-outline" onclick="copyDetail('Flutterwave MFB', this)">Copy</button>
+        </div>
+      </div>
 
-   <div class="gallery-slide">
-<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi-yA7qk1-EeFokyue_om6vcKPHQP3egK4gBqd4JV2wv-QmZrqexktCTy1j71SYoRcwlsuloUIfNDXAnPLf__mePBb_ZEE2BJs0YBCCUfYPApa7geP13XDg0fV8KlK6JuyWZKeeH7S09VkZiZH58xVeAfMg1a4a07zAEa_UenawuYrEaoAJr51Cc7fNDrM/s1080/WhatsApp%20Image%202026-06-12%20at%206.57.30%20PM%20(2).jpeg">
-</div>
+      <div class="checkout-note">
+        <i class="fas fa-info-circle me-1"></i> Transfer the activation fee to the account above, then tap the button below to confirm your payment on WhatsApp. Your access will be sent immediately.
+      </div>
 
-   <div class="gallery-slide">
-<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDPtswrKa_Z3muYH7rs6B_TPpBycZkcr5eMrCAkjwl_dtVXJk3iCVyut4BAdNerkmCCckVGpGGokEyIydv5_wv-7KNMS1Rd0JWNwk_8rrKoKFKzVmnD-SzfnhgrJBMhPrHZSAT_zPRy5DseuKzJOiglvxM4BpSQlZtvuAd1_cxReWsWasZo4-3MRiapJk/s1280/WhatsApp%20Image%202026-06-12%20at%208.12.36%20PM%20(2).jpeg">
-</div>
+      <div class="d-grid">
+        <a href="https://wa.me/2348127348137?text=Hello%2C%20I%20have%20completed%20my%20payment%20for%20PromiseTech%20Academy%20and%20I%27m%20sending%20my%20proof%20of%20payment." target="_blank" class="selar-btn text-decoration-none text-center" onclick="ttq.track('Purchase');">
+          <i class="fab fa-whatsapp me-2"></i> I Have Completed My Payment
+        </a>
+      </div>
 
-   <div class="gallery-slide">
-<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjSadKhVvQt2E6eEvqznh0okma0LCiVp2x3kJE9oNEY-wOwgNIQw-iriup_SVhSTXRR-ruFWNM2IyoiW6VAGN7lboxaqVrOLoUxr2u32EMH_JIcFPPHEXla8y7zS2tYhXN_hZBx9227DJAvvxidX9EFoxmV3hH6ugP9dYLn7RI1wlSawaooX_KoKWcX4hU/s1280/WhatsApp%20Image%202026-06-12%20at%208.12.39%20PM%20(1).jpeg">
-</div>
+    </div>
+  </div>
 
-  <div class="gallery-slide">
-<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhMXjfUvEsgSkDRTF4wodPo9caAfzkWi1I446USMjPD8HZVYvEsexqGcT8AosPO8l7Jy09jM5gH207DIJp2Pi8FQ28eR0fTJn_xANonotU8IRoW_Q1Iotn7h6qad0FgfqDOvCcyuVrqHEVCEyBr98-M2aM8RMepoqZlf1njyYD9eYeRfmHlqnLDoVaG_t8/s720/WhatsApp%20Image%202026-06-21%20at%204.57.21%20PM.jpeg">
-</div>
+  <!-- BOOTSTRAP JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Countdown timer (30 minutes)
+    let totalSeconds = 30 * 60;
+    const display = document.getElementById('countdownDisplay');
 
-  <div class="gallery-slide">
-<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkZSu_gYy4Iofm4rVWRsQuo8nuEzyqfijWa3uhFqUZFajnHxkYXomnLS33oRHIhYAciqfbpHpprLKxMj78uHL5_bJkW7YnW4kWmK2IydqOmV_ji_UsdULTLvjhHNtO4oJ8DJ_bxkRoB3Ok2y6nNhRc1_bwx5cr6Wtxm-sgULdN6kt0SQtp9qJbDKJcbKQ/s1280/WhatsApp%20Image%202026-06-21%20at%204.57.21%20PM%20(1).jpeg">
-</div>
+    function updateCountdown() {
+      const mins = Math.floor(totalSeconds / 60);
+      const secs = totalSeconds % 60;
+      display.textContent = `${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
+      if (totalSeconds <= 0) {
+        clearInterval(countdownInterval);
+        display.textContent = '00:00';
+      } else {
+        totalSeconds--;
+      }
+    }
+    updateCountdown();
+    const countdownInterval = setInterval(updateCountdown, 1000);
 
-  <div class="gallery-slide">
-<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiZADAJzAxW5556Qui6MWx2FDxSM_NBsZe8X8oVYEnYJuRTZjTDNQohicMdQAlyRJP2-8hkiDwiKerKke0rx3FddTnvdE_f-GabFmTUoQaiN-s5tetkf_atg3Fkdb74kF2E_PkuwFORfV-CZLwNyGL6Lht2r5Z42IO1zutdtStZEMBBTm7uhr8jkxhPa2Y/s1280/WhatsApp%20Image%202026-06-21%20at%204.57.20%20PM.jpeg">
-</div>
+    // Smooth scroll for nav links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        const targetId = this.getAttribute('href');
+        const target = document.querySelector(targetId);
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
 
-  <div class="gallery-slide">
-<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg4NOqUA6zDdVtRoz3RcGoSauDC3-WDz4QmJRK2nhwAoqmhu-oZfOM-2J8kIdZrhDWyWOeiQHl0sljmWYtlAIfxd6YeHGJUahRVeKTFCzZCkrgEKVIMxi82qNLYGJ6s6YR58WrOT0kyPLrx5hO6N8hICcQyp3q5Uj7i6cn5ICqOIeGfSNooK-VXxrP8quA/s956/WhatsApp%20Image%202026-06-21%20at%204.57.21%20PM%20(2).jpeg">
-</div>
+    // Open Selar-style checkout overlay (everything else disappears behind it)
+    function openCheckout() {
+      const overlay = document.getElementById('checkoutOverlay');
+      document.body.style.overflow = 'hidden';
+      overlay.style.display = 'block';
+      overlay.scrollTop = 0;
+      requestAnimationFrame(() => {
+        overlay.classList.add('active');
+      });
+    }
 
-  <div class="gallery-slide">
-<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3lbEnuVWx16MsZLZv1U2Ri6_wJxPHVS0ihxHHHGdIb2sJqxRlCr8aD1keq3kMpAcahBp-Rbqtxos8Eo7JQV9V-L0GitRSqjoNJzfsgoPKcDhQoRDT1GOwGddXRNlYW2SS46cGkm059aJbqyMNUYYpe72_beJIOmzrDIuZM0jPYuzl_7jnQ2beadWYl4g/s720/WhatsApp%20Image%202026-06-12%20at%206.56.00%20PM.jpeg">
-</div>
+    function closeCheckout() {
+      const overlay = document.getElementById('checkoutOverlay');
+      overlay.classList.remove('active');
+      document.body.style.overflow = '';
+      setTimeout(() => { overlay.style.display = 'none'; }, 450);
+    }
 
-  <div class="gallery-slide">
-<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3A8o7fmezJii-CRVs1X-1U3UADQEIkwX2e2Dda434NDuLbN78aMQ9wdxpAQyDL9_izkV9fAIKFF7EPDVzdPkNrVqT__i4VUgixuhjyyt6X2WWo8P6PNWdZkCDO-O4pAaoZ9pH_skGCPKom-Mz4FB0tm-TtAQ7Y11ODXDcYNk0tgPFeugZXmvSs353JKE/s960/WhatsApp%20Image%202026-06-12%20at%207.01.28%20PM%20(1).jpeg">
-</div>
+    // Kept for backwards compatibility with any inline calls
+    function showPaymentDetails() { openCheckout(); }
 
-  <div class="gallery-slide">
-<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgGRtnqTVN8VnrfTKbIJYfV7GtKSddC0ZZxi4EnCuFYZ-MPOPjn1F-aO37OW_UALqET69h11xEkUI2mClLuIyO5w2jzCwFZH3u2XOCbXQYG2lR-xYsdH4ooXvhf0t-y5Mf2V6Lf4L7anxhPbqSJ3opanKvqrnk1NSf1Y7PI9pnvq_QZmFILnAHwbXg8RGM/s1619/WhatsApp%20Image%202026-06-15%20at%2012.02.31%20PM.jpeg">
-</div>
-</div>
+    // Copy bank detail to clipboard
+    function copyDetail(text, btn) {
+      navigator.clipboard.writeText(text).then(() => {
+        const original = btn.textContent;
+        btn.textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.textContent = original;
+          btn.classList.remove('copied');
+        }, 1500);
+      });
+    }
 
-</div>
-
-<div class="gallery-controls">
-<span class="gallery-dot active" data-index="0"></span>
-<span class="gallery-dot" data-index="1"></span>
-<span class="gallery-dot" data-index="2"></span>
-</div>
-
-</section>
-
-<section id="testimonials" class="section">
-<h2 class="section-title">Testimonials</h2>
-<div class="testimonials">
-<div class="testimonial">The bursary programme has helped many students.</div>
-<div class="testimonial">The ICT centre improved digital learning.</div>
-<div class="testimonial">Community projects have impacted residents positively.</div>
-</div>
-</section>
-
-<section class="section cta">
-<h2>2026 Bursary Programme is Ongoing</h2>
-<p>Apply now and complete your application.</p><br>
-<a href=" https://www.nsitubiumbursaryportal.com.ng/" class="btn">PROCEED TO APPLICATION FORM</a>
-</section>
-
-<footer>
-<p>NSIT UBIUM LOCAL GOVERNMENT PORTAL 2026</p>
-</footer>
-
-<script>
-
-// COUNTERS
-document.querySelectorAll('.counter').forEach(counter=>{
-const target=+counter.dataset.target;
-let count=0;
-const step=Math.ceil(target/100);
-
-const timer=setInterval(()=>{
-count+=step;
-
-if(count>=target){
-count=target;
-clearInterval(timer);
-}
-
-counter.textContent=count.toLocaleString()+"+";
-},20);
-});
-
-
-// GALLERY SLIDER
-const galleryContainer=document.querySelector('.gallery-container');
-const dots=document.querySelectorAll('.gallery-dot');
-
-let currentSlide=0;
-const totalSlides =
-document.querySelectorAll('.gallery-slide').length;
-
-function showSlide(index){
-
-galleryContainer.style.transform=
-`translateX(-${index*100}%)`;
-
-dots.forEach(dot=>dot.classList.remove('active'));
-dots[index].classList.add('active');
-
-currentSlide=index;
-}
-
-dots.forEach(dot=>{
-dot.addEventListener('click',()=>{
-showSlide(Number(dot.dataset.index));
-});
-});
-
-setInterval(()=>{
-currentSlide++;
-
-if(currentSlide>=totalSlides){
-currentSlide=0;
-}
-
-showSlide(currentSlide);
-
-},4000);
-
-</script>
-
+    // Track all "Enroll Now" and "Activate" buttons with TikTok Pixel
+    document.querySelectorAll('a[href="#cta"]').forEach(btn => {
+      btn.addEventListener('click', function() {
+        if (window.ttq) ttq.track('Lead');
+      });
+    });
+  </script>
 </body>
 </html>
--->
